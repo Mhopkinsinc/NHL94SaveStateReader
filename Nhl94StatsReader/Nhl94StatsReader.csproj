@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeReference.cs" />
+    <Compile Include="ReferenceFiles\CodeReference.cs" />
     <Compile Include="Stat.cs" />
     <Compile Include="IStatManager.cs" />
     <Compile Include="IStatReader.cs" />
@@ -50,7 +50,7 @@
     <Compile Include="StatType.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="save_state %281%29.php" />
+    <None Include="ReferenceFiles\save_state %281%29.php" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
