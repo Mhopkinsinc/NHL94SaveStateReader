@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Reflection;
 using Nhl94StatsReader;
 
 namespace ConsoleApplication3
@@ -25,7 +26,8 @@ namespace ConsoleApplication3
           
 
             //Create Stat Reader
-            var reader = new StatReader(@"C:\Users\Mark\Desktop\nhl94.zs3");
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl94.zs3");
+            var reader = new StatReader(path); //@"C:\Users\Mark\Desktop\nhl94.zs3");
             
             //Read List Of Stats
             reader.ReadStats(stats);
