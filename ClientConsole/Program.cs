@@ -13,7 +13,7 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            CreateStats(); 
+            CreateStats();
         }
 
         private static void CreateStats()
