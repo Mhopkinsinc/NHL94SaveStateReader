@@ -13,11 +13,29 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            CreateStats();
+
+            //Stat Types
+            // TimeStat, IntegerStat
+
+            //Define The Stat in a list of stats
+            // var hometeam = new stat
+
+            //Set The Box Score Values
+            // boxscore.hometeam = hometeam.readstat;
+
+            var ts = new TimeStat() { Offsets = new long[] { 9062, 9061 }, Statname = "Offensive Time Zone", Stattype = StatType.Game };            
+            ts.ReadStat();
+
+            Console.ReadLine();
+             
+          
+            //CreateStats();
         }
 
         private static void CreateStats()
         {
+            
+                       
             //Create Stat Manager
             var sm = new StatManager();
 
