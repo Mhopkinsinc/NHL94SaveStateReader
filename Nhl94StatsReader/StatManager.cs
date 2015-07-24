@@ -9,7 +9,7 @@ namespace Nhl94StatsReader
     public class StatManager :IStatManager
     {
 
-        Stat[] _Stats;        
+        IStat[] _Stats;        
 
         public void AddStat(IStat stat)
         {

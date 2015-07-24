@@ -8,7 +8,6 @@ namespace Nhl94StatsReader
 {
     public interface IStatReader
     {
-        void ReadStat(IStat stat);
-        void Write();
+        byte ReadStat(long offset);        
     }
 }

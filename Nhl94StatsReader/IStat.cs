@@ -8,9 +8,6 @@ namespace Nhl94StatsReader
 {
     public interface IStat
     {
-        long Offset { get; set; }
-        string Statname { get; set; }
-        StatType StatType { get; set; }      
-        object StatValue { get; set; }      
+        void ReadStat();
     }
 }

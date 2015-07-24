@@ -7,68 +7,32 @@ using System.Threading.Tasks;
 
 namespace Nhl94StatsReader
 {
-    public class StatReader :IStatReader
+    public class StatReader : IStatReader
     {
-        
-        private string _saveState;          // = @"C:\Users\Mark\Desktop\nhl94.zs3";
+        public String SaveStatePath
+        {get; set;}
+
         private FileStream _fileStream;
+        private String _saveStatePath;          
 
-        
-
-        public StatReader(string SaveStatePath)
+        public StatReader()
         {
-            _saveState = SaveStatePath;
-        }        
-
-        
-        public void ReadStat(IStat stat)
-        {
-
-            using (_fileStream = File.OpenRead(_saveState))
-               {
-                   using (BinaryReader w = new BinaryReader(_fileStream))
-                   {
-
-                    
-                           _fileStream.Seek(stat.Offset, SeekOrigin.Begin);
-                           var result = w.ReadByte();                       
-                           Console.WriteLine(stat.Statname + " : " + result);                           
-                           Console.ReadLine();
-                      
-
-                   }
-
-               }
+            if (_saveStatePath == null) _saveStatePath = SaveStatePath;
+            _fileStream = File.OpenRead(_saveStatePath);
         }
 
-        public void ReadStats(List<IStat> stats)
+        public byte ReadStat(long offset)
         {
+            byte _result;
 
-            using (_fileStream = File.OpenRead(_saveState))
+            using (BinaryReader w = new BinaryReader(_fileStream))
             {
-                using (BinaryReader w = new BinaryReader(_fileStream))
-                {
-
-                    foreach (Stat stat in stats)
-                    {
-                    _fileStream.Seek(stat.Offset, SeekOrigin.Begin);
-                    var result = w.ReadByte();
-                    Console.WriteLine(stat.Statname + " : " + result);
-                    stat.StatValue = result;
-                    stat.StatValueHex = result.ToString("X");
-                    //Console.ReadLine();
-                    }
-
-                }
-
+                _fileStream.Seek(offset, SeekOrigin.Begin);
+                _result = w.ReadByte();
             }
 
+            return _result;
 
-        }
-
-        public void Write()
-        {
-            throw new NotImplementedException();
         }
     }
 }
