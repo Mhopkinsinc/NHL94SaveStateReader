@@ -31,30 +31,37 @@ namespace Nhl94StatsReader
         private int _statValueInt { get; set; }
 
         #endregion
-        
+
+        #region Constructors
 
         public IntegerStat(IStatReader StatReader)
         {
             this._statReader = StatReader;
-        }
+        } 
 
-        public void ReadStat()
-        {
+        #endregion
 
-            
-            var result = _statReader.ReadStat(Offset);
-            _offsetResults.Add(result.ToString("X"));
-            _statValueInt = result;            
+        #region Methods
 
-            _statReader = null;
-
-            //LOG
-            Console.WriteLine(Statname + " - Offset : " + Offset + " , Hex Value : " + _offsetResults[0] + " , Int Value : " + _statValueInt);
-            Console.WriteLine();
-        }
+            public void ReadStat()
+            {
 
 
+                var result = _statReader.ReadStat(Offset);
+                _offsetResults.Add(result.ToString("X"));
+                _statValueInt = result;
 
-        public void Log() { }
+                _statReader = null;
+
+                //LOG
+                Console.WriteLine(Statname + " - Offset : " + Offset + " , Hex Value : " + _offsetResults[0] + " , Int Value : " + _statValueInt);
+                Console.WriteLine();
+            }
+
+
+
+            public void Log() { }
+
+        #endregion
     }
 }

@@ -11,7 +11,9 @@ namespace Nhl94StatsReader
     public class TimeStat : IStat
     {
 
-        #region Public Variables
+        #region Properties
+
+        #region Public
 
         IStatReader _statReader;
 
@@ -22,11 +24,11 @@ namespace Nhl94StatsReader
         { get; set; }
 
         public StatType Stattype
-        { get; set; }       
+        { get; set; }
 
         #endregion
 
-        #region Private Variables        
+        #region Private
 
         private List<string> _offsetResults = new List<string>();
 
@@ -34,19 +36,27 @@ namespace Nhl94StatsReader
 
         private int _statValueInt { get; set; }
 
+        #endregion 
+
         #endregion
+
+        #region Constructors
 
         public TimeStat(IStatReader StatReader)
         {
             this._statReader = StatReader;
-        }
-        
+        } 
+
+        #endregion
+
+        #region Methods
+
         public void ReadStat()
         {
 
             foreach (long offset in Offsets)
             {
-               var result = _statReader.ReadStat(offset);
+                var result = _statReader.ReadStat(offset);
                 _offsetResults.Add(result.ToString("X"));
                 _statValueHex += result.ToString("X");
             }
@@ -64,11 +74,13 @@ namespace Nhl94StatsReader
             Console.WriteLine(timespan.ToString(@"mm\:ss"));
             Console.WriteLine();
 
-    
+
         }
 
+
+
+        public void Log() { } 
        
-        
-        public void Log() { }
+        #endregion
     }
 }

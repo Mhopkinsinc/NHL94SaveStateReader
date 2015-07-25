@@ -29,13 +29,6 @@ namespace ConsoleApplication3
             Console.ReadLine();
 
             
-            
-            //Stat Types
-            // TimeStat, IntegerStat
-
-            //Define The Stat in a list of stats
-            // var hometeam = new stat
-
             //Set The Box Score Values
             // boxscore.hometeam = hometeam.readstat;
 
