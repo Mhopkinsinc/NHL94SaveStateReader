@@ -39,8 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReferenceFiles\CodeReference.cs" />
-    <Compile Include="IStatManager.cs" />
+    <Compile Include="IntegerStat.cs" />
     <Compile Include="IStatReader.cs" />
     <Compile Include="IStat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

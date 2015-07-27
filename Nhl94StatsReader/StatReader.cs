@@ -9,30 +9,55 @@ namespace Nhl94StatsReader
 {
     public class StatReader : IStatReader
     {
-        public String SaveStatePath
-        {get; set;}
+        #region Properties
 
-        private FileStream _fileStream;
-        private String _saveStatePath;          
+            private FileStream _fileStream;
+            private String _saveStatePath; 
 
-        //public StatReader()
-        //{
-        //    if (_saveStatePath == null) _saveStatePath = SaveStatePath;
-        //    _fileStream = File.OpenRead(_saveStatePath);
-        //}
+        #endregion
 
-        public byte ReadStat(long offset)
-        {
-            byte _result;
-
-            using (BinaryReader w = new BinaryReader(_fileStream))
+        #region Constructors
+        
+            public StatReader()
             {
-                _fileStream.Seek(offset, SeekOrigin.Begin);
-                _result = w.ReadByte();
             }
 
-            return _result;
+            public StatReader(String SaveStatePath)
+            {
+                SetSaveStatePath(SaveStatePath);
+            } 
+        
+        #endregion
 
-        }
+        #region Methods
+        
+            public void SetSaveStatePath(String SaveStatePath)
+            {
+                if (_saveStatePath == null)
+                {
+                    _saveStatePath = SaveStatePath;
+                    _fileStream = File.OpenRead(_saveStatePath);
+                }
+            }
+
+            public byte ReadStat(long offset)
+            {
+                byte _result;
+
+                BinaryReader w = new BinaryReader(_fileStream);
+                _fileStream.Seek(offset, SeekOrigin.Begin);
+                _result = w.ReadByte();
+
+                return _result;
+
+            }
+
+            public void Close()
+            {
+                _fileStream.Close();
+            }
+
+        #endregion
+
     }
 }
