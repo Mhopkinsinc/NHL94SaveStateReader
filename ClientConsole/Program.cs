@@ -14,14 +14,15 @@ namespace ConsoleApplication3
         static void Main(string[] args)
         {
 
-            //Get An Instance Of The Stat Manager
+            //Create An Instance Of The Stat Manager
             var sm = new StatManager();
             
-            //Get The Path Of The ZSNES Save State File
+            //Set The Path Of The ZSNES Save State File
             var _saveStatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl94.zs3");
 
-            //Load The File
+            //Load The File            
             sm.LoadSaveState(_saveStatePath);
+            sm.
 
             //Load Default Stats
             sm.LoadDefaultStats();
