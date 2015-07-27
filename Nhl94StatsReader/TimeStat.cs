@@ -23,8 +23,6 @@ namespace Nhl94StatsReader
 
         #region Public Variables
 
-        public string SaveStatePath;
-
         public long[] Offsets
         { get; set; }
 

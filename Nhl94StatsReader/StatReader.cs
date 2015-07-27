@@ -15,11 +15,11 @@ namespace Nhl94StatsReader
         private FileStream _fileStream;
         private String _saveStatePath;          
 
-        public StatReader()
-        {
-            if (_saveStatePath == null) _saveStatePath = SaveStatePath;
-            _fileStream = File.OpenRead(_saveStatePath);
-        }
+        //public StatReader()
+        //{
+        //    if (_saveStatePath == null) _saveStatePath = SaveStatePath;
+        //    _fileStream = File.OpenRead(_saveStatePath);
+        //}
 
         public byte ReadStat(long offset)
         {
