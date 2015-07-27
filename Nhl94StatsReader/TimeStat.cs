@@ -44,7 +44,7 @@ namespace Nhl94StatsReader
 
         public TimeStat(IStatReader StatReader)
         {
-            this._statReader = StatReader;
+            this._statReader = StatReader;            
         } 
 
         #endregion
@@ -73,7 +73,6 @@ namespace Nhl94StatsReader
             Console.WriteLine(Statname + " - Combined Decimal Value : " + _statValueInt);
             Console.WriteLine(timespan.ToString(@"mm\:ss"));
             Console.WriteLine();
-
 
         }
 

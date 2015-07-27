@@ -128,9 +128,6 @@ namespace Nhl94StatsReader
             }
         
         #endregion
-
-        
-        
         
       
     }

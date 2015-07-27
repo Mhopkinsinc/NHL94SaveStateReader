@@ -59,7 +59,6 @@ namespace Nhl94StatsReader
             }
 
 
-
             public void Log() { }
 
         #endregion

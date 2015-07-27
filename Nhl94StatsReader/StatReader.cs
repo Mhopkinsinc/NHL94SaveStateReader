@@ -7,27 +7,34 @@ using System.Threading.Tasks;
 
 namespace Nhl94StatsReader
 {
-    public class StatReader : IStatReader
+    public class StatReader : IStatReader, IDisposable
     {
         #region Properties
 
-            private FileStream _fileStream;
-            private String _saveStatePath; 
+            FileStream _fileStream;
+            private String _saveStatePath;
+            // Flag: Has Dispose already been called? 
+            bool disposed = false;
 
         #endregion
 
         #region Constructors
-        
-            public StatReader()
+
+        public StatReader()
             {
             }
 
             public StatReader(String SaveStatePath)
             {
                 SetSaveStatePath(SaveStatePath);
-            } 
-        
-        #endregion
+            }
+
+            ~StatReader()
+            {
+                Dispose();
+            }
+
+        #endregion        
 
         #region Methods
         
@@ -57,7 +64,30 @@ namespace Nhl94StatsReader
                 _fileStream.Close();
             }
 
-        #endregion
+        public void Dispose()
+        {
+            Dispose(true);
+        }
 
+        // Protected implementation of Dispose pattern. 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                _fileStream.Close();
+            }
+
+            Console.WriteLine("Disposing");
+
+            // Free any unmanaged objects here. 
+            //
+            disposed = true;
+        }
     }
+
+    #endregion
+
 }

@@ -21,8 +21,7 @@ namespace ConsoleApplication3
             var _saveStatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl94.zs3");
 
             //Load The File            
-            sm.LoadSaveState(_saveStatePath);
-            sm.
+            sm.LoadSaveState(_saveStatePath);            
 
             //Load Default Stats
             sm.LoadDefaultStats();
