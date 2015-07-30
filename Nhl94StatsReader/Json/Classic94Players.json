@@ -1,0 +1,5627 @@
+﻿[
+  {
+    "PlayerID": 1,
+    "FirstName": "Guy",
+    "LastName": "Hebert",
+    "Team": "ANH",
+    "Position": "G",
+    "Jersey": 29,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 2,
+    "FirstName": "Ron",
+    "LastName": "Tugnutt",
+    "Team": "ANH",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 3,
+    "FirstName": "Steven",
+    "LastName": "King",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 4,
+    "FirstName": "Troy",
+    "LastName": "Loney",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 24,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 5,
+    "FirstName": "Stu",
+    "LastName": "Grimson",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 6,
+    "FirstName": "Terry",
+    "LastName": "Yake",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 7,
+    "FirstName": "Bob",
+    "LastName": "Corkum",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 30,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 8,
+    "FirstName": "Anatoli",
+    "LastName": "Semenov",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 9,
+    "FirstName": "Lonnie",
+    "LastName": "Loach",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 10,
+    "FirstName": "Robin",
+    "LastName": "Bawa",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 11,
+    "FirstName": "Tim",
+    "LastName": "Sweeney",
+    "Team": "ANH",
+    "Position": "F",
+    "Jersey": 41,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 12,
+    "FirstName": "Alexei",
+    "LastName": "Kasatonov",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 13,
+    "FirstName": "Sean",
+    "LastName": "Hill",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 38,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 14,
+    "FirstName": "Randy",
+    "LastName": "Ladouceur",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 39,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 15,
+    "FirstName": "David",
+    "LastName": "Williams",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 16,
+    "FirstName": "Bill",
+    "LastName": "Houlder",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 33,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 17,
+    "FirstName": "Bobby",
+    "LastName": "Dollas",
+    "Team": "ANH",
+    "Position": "D",
+    "Jersey": 32,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 18,
+    "FirstName": "Andy",
+    "LastName": "Moog",
+    "Team": "BOS",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 19,
+    "FirstName": "John",
+    "LastName": "Blue",
+    "Team": "BOS",
+    "Position": "G",
+    "Jersey": 39,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 20,
+    "FirstName": "Adam",
+    "LastName": "Oates",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 21,
+    "FirstName": "Dave",
+    "LastName": "Poulin",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 22,
+    "FirstName": "Vladimir",
+    "LastName": "Ruzicka",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 38,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 23,
+    "FirstName": "Ted",
+    "LastName": "Donato",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 24,
+    "FirstName": "Joe",
+    "LastName": "Juneau",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 49,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 25,
+    "FirstName": "Dmitri",
+    "LastName": "Kvartalnov",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 26,
+    "FirstName": "Dave",
+    "LastName": "Reid",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 27,
+    "FirstName": "Gregori",
+    "LastName": "Pantaleyev",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 28,
+    "FirstName": "Brent",
+    "LastName": "Hughes",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 42,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 29,
+    "FirstName": "Cam",
+    "LastName": "Neely",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 30,
+    "FirstName": "Stephen",
+    "LastName": "Leach",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 31,
+    "FirstName": "Stephen",
+    "LastName": "Heinze",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 32,
+    "FirstName": "C.J.",
+    "LastName": "Young",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 33,
+    "FirstName": "Darin",
+    "LastName": "Kimble",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 34,
+    "FirstName": "Peter",
+    "LastName": "Douris",
+    "Team": "BOS",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 35,
+    "FirstName": "Ray",
+    "LastName": "Bourque",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 77,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 36,
+    "FirstName": "Don",
+    "LastName": "Sweeney",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 32,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 37,
+    "FirstName": "Glen",
+    "LastName": "Wesley",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 26,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 38,
+    "FirstName": "David",
+    "LastName": "Shaw",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 39,
+    "FirstName": "Gordie",
+    "LastName": "Roberts",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 14,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 40,
+    "FirstName": "Glen",
+    "LastName": "Feathrston",
+    "Team": "BOS",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 41,
+    "FirstName": "Grant",
+    "LastName": "Fuhr",
+    "Team": "BUF",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 42,
+    "FirstName": "Tom",
+    "LastName": "Draper",
+    "Team": "BUF",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 43,
+    "FirstName": "Dominik",
+    "LastName": "Hasek",
+    "Team": "BUF",
+    "Position": "G",
+    "Jersey": 39,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 44,
+    "FirstName": "Pat",
+    "LastName": "LaFontaine",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 45,
+    "FirstName": "Dale",
+    "LastName": "Hawerchuk",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 46,
+    "FirstName": "Bob",
+    "LastName": "Sweeney",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 47,
+    "FirstName": "Dave",
+    "LastName": "Hannan",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 48,
+    "FirstName": "Randy",
+    "LastName": "Wood",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 49,
+    "FirstName": "Yuri",
+    "LastName": "Khmylev",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 50,
+    "FirstName": "Brad",
+    "LastName": "May",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 51,
+    "FirstName": "Bob",
+    "LastName": "Errey",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 52,
+    "FirstName": "Rob",
+    "LastName": "Ray",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 53,
+    "FirstName": "Alexnder",
+    "LastName": "Mogilny",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 89,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 54,
+    "FirstName": "Wayne",
+    "LastName": "Presley",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 55,
+    "FirstName": "Donald",
+    "LastName": "Audette",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 56,
+    "FirstName": "Colin",
+    "LastName": "Patterson",
+    "Team": "BUF",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 57,
+    "FirstName": "Doug",
+    "LastName": "Bodger",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 8,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 58,
+    "FirstName": "Petr",
+    "LastName": "Svoboda",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 59,
+    "FirstName": "Richard",
+    "LastName": "Smehlik",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 42,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 60,
+    "FirstName": "Ken",
+    "LastName": "Sutton",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 41,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 61,
+    "FirstName": "Grant",
+    "LastName": "Ledyard",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 62,
+    "FirstName": "Gord",
+    "LastName": "Donnelly",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 63,
+    "FirstName": "Randy",
+    "LastName": "Moller",
+    "Team": "BUF",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 64,
+    "FirstName": "Mike",
+    "LastName": "Vernon",
+    "Team": "CGY",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 65,
+    "FirstName": "Jeff",
+    "LastName": "Reese",
+    "Team": "CGY",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 66,
+    "FirstName": "Joe",
+    "LastName": "Nieuwendyk",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 67,
+    "FirstName": "Robert",
+    "LastName": "Reichel",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 68,
+    "FirstName": "Joel",
+    "LastName": "Otto",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 69,
+    "FirstName": "Gary",
+    "LastName": "Roberts",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 70,
+    "FirstName": "Paul",
+    "LastName": "Ranheim",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 71,
+    "FirstName": "Brent",
+    "LastName": "Ashton",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 72,
+    "FirstName": "Chris",
+    "LastName": "Lindberg",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 73,
+    "FirstName": "Craig",
+    "LastName": "Berube",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 74,
+    "FirstName": "Theoren",
+    "LastName": "Fleury",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 75,
+    "FirstName": "Sergei",
+    "LastName": "Makarov",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 42,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 76,
+    "FirstName": "Greg",
+    "LastName": "Paslawski",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 77,
+    "FirstName": "Ronnie",
+    "LastName": "Stern",
+    "Team": "CGY",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 78,
+    "FirstName": "Gary",
+    "LastName": "Suter",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 20,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 79,
+    "FirstName": "Al",
+    "LastName": "MacInnis",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 80,
+    "FirstName": "Roger",
+    "LastName": "Johansson",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 81,
+    "FirstName": "Trent",
+    "LastName": "Yawney",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 18,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 82,
+    "FirstName": "Frank",
+    "LastName": "Musil",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 83,
+    "FirstName": "Michel",
+    "LastName": "Petit",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 84,
+    "FirstName": "Kevin",
+    "LastName": "Dahl",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 85,
+    "FirstName": "Chris",
+    "LastName": "Dahlquist",
+    "Team": "CGY",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 86,
+    "FirstName": "Ed",
+    "LastName": "Belfour",
+    "Team": "CHI",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 87,
+    "FirstName": "Jim",
+    "LastName": "Waite",
+    "Team": "CHI",
+    "Position": "G",
+    "Jersey": 29,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 88,
+    "FirstName": "Jeremy",
+    "LastName": "Roenick",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 89,
+    "FirstName": "Christan",
+    "LastName": "Ruuttu",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 90,
+    "FirstName": "Brent",
+    "LastName": "Sutter",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 91,
+    "FirstName": "Troy",
+    "LastName": "Murray",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 92,
+    "FirstName": "Michel",
+    "LastName": "Goulet",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 93,
+    "FirstName": "Stephane",
+    "LastName": "Matteau",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 94,
+    "FirstName": "Greg",
+    "LastName": "Gilbert",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 95,
+    "FirstName": "Jocelyn",
+    "LastName": "Lemieux",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 96,
+    "FirstName": "Steve",
+    "LastName": "Larmer",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 97,
+    "FirstName": "Dirk",
+    "LastName": "Graham",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 33,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 98,
+    "FirstName": "Brian",
+    "LastName": "Noonan",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 99,
+    "FirstName": "Dave",
+    "LastName": "Christian",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 100,
+    "FirstName": "Joe",
+    "LastName": "Murphy",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 101,
+    "FirstName": "Rob",
+    "LastName": "Brown",
+    "Team": "CHI",
+    "Position": "F",
+    "Jersey": 44,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 102,
+    "FirstName": "Chris",
+    "LastName": "Chelios",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 103,
+    "FirstName": "Steve",
+    "LastName": "Smith",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 104,
+    "FirstName": "Bryan",
+    "LastName": "Marchment",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 105,
+    "FirstName": "Frantsek",
+    "LastName": "Kucera",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 106,
+    "FirstName": "Craig",
+    "LastName": "Muni",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 107,
+    "FirstName": "Keith",
+    "LastName": "Brown",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 108,
+    "FirstName": "Cam",
+    "LastName": "Russell",
+    "Team": "CHI",
+    "Position": "D",
+    "Jersey": 8,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 109,
+    "FirstName": "Jon",
+    "LastName": "Casey",
+    "Team": "DAL",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 110,
+    "FirstName": "Darcy",
+    "LastName": "Wakaluk",
+    "Team": "DAL",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 111,
+    "FirstName": "Mike",
+    "LastName": "Modano",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 112,
+    "FirstName": "Dave",
+    "LastName": "Gagner",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 113,
+    "FirstName": "Neal",
+    "LastName": "Broten",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 114,
+    "FirstName": "Brent",
+    "LastName": "Gilchrist",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 41,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 115,
+    "FirstName": "Mike",
+    "LastName": "McPhee",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 116,
+    "FirstName": "Gaetan",
+    "LastName": "Duchesne",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 117,
+    "FirstName": "Brian",
+    "LastName": "Propp",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 118,
+    "FirstName": "Russ",
+    "LastName": "Courtnall",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 119,
+    "FirstName": "Ulf",
+    "LastName": "Dahlen",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 120,
+    "FirstName": "Mike",
+    "LastName": "Craig",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 121,
+    "FirstName": "Trent",
+    "LastName": "Klatt",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 122,
+    "FirstName": "Shane",
+    "LastName": "Churla",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 123,
+    "FirstName": "Stewart",
+    "LastName": "Gavin",
+    "Team": "DAL",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 124,
+    "FirstName": "Mark",
+    "LastName": "Tinordi",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 125,
+    "FirstName": "Tommy",
+    "LastName": "Sjodin",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 33,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 126,
+    "FirstName": "Jim",
+    "LastName": "Johnson",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 127,
+    "FirstName": "Derian",
+    "LastName": "Hatcher",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 128,
+    "FirstName": "Craig",
+    "LastName": "Ludwig",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 129,
+    "FirstName": "Richard",
+    "LastName": "Matvichuk",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 130,
+    "FirstName": "Mark",
+    "LastName": "Osiecki",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 131,
+    "FirstName": "Brad",
+    "LastName": "Berry",
+    "Team": "DAL",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 132,
+    "FirstName": "Tim",
+    "LastName": "Cheveldae",
+    "Team": "DET",
+    "Position": "G",
+    "Jersey": 32,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 133,
+    "FirstName": "Vincent",
+    "LastName": "Riendeau",
+    "Team": "DET",
+    "Position": "G",
+    "Jersey": 37,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 134,
+    "FirstName": "Steve",
+    "LastName": "Yzerman",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 135,
+    "FirstName": "Sergei",
+    "LastName": "Fedorov",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 91,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 136,
+    "FirstName": "Dallas",
+    "LastName": "Drake",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 137,
+    "FirstName": "Mike",
+    "LastName": "Sillinger",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 138,
+    "FirstName": "Vachslav",
+    "LastName": "Kozlov",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 139,
+    "FirstName": "Paul",
+    "LastName": "Ysebaert",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 140,
+    "FirstName": "Shawn",
+    "LastName": "Burr",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 141,
+    "FirstName": "Keith",
+    "LastName": "Primeau",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 55,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 142,
+    "FirstName": "Gerard",
+    "LastName": "Gallant",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 143,
+    "FirstName": "John",
+    "LastName": "Ogrodnick",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 144,
+    "FirstName": "Dino",
+    "LastName": "Ciccarelli",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 145,
+    "FirstName": "Ray",
+    "LastName": "Sheppard",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 146,
+    "FirstName": "Bob",
+    "LastName": "Probert",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 24,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 147,
+    "FirstName": "Sheldon",
+    "LastName": "Kennedy",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 148,
+    "FirstName": "Jim",
+    "LastName": "Hiller",
+    "Team": "DET",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 149,
+    "FirstName": "Paul",
+    "LastName": "Coffey",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 77,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 150,
+    "FirstName": "Steve",
+    "LastName": "Chiasson",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 151,
+    "FirstName": "Yves",
+    "LastName": "Racine",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 33,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 152,
+    "FirstName": "Nicklas",
+    "LastName": "Lidstrom",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 153,
+    "FirstName": "Mark",
+    "LastName": "Howe",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 154,
+    "FirstName": "Vladimir",
+    "LastName": "Konstantov",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 16,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 155,
+    "FirstName": "Steve",
+    "LastName": "Konroyd",
+    "Team": "DET",
+    "Position": "D",
+    "Jersey": 8,
+    "RosterID": 24
+  },
+  {
+    "PlayerID": 156,
+    "FirstName": "Bill",
+    "LastName": "Ranford",
+    "Team": "EDM",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 157,
+    "FirstName": "Doug",
+    "LastName": "Weight",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 158,
+    "FirstName": "Todd",
+    "LastName": "Elik",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 34,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 159,
+    "FirstName": "Craig",
+    "LastName": "MacTavish",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 160,
+    "FirstName": "Kevin",
+    "LastName": "Todd",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 161,
+    "FirstName": "Shjon",
+    "LastName": "Podein",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 162,
+    "FirstName": "Mike",
+    "LastName": "Hudson",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 163,
+    "FirstName": "Shayne",
+    "LastName": "Corson",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 164,
+    "FirstName": "Craig",
+    "LastName": "Simpson",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 165,
+    "FirstName": "Zdeno",
+    "LastName": "Ciger",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 166,
+    "FirstName": "Kelly",
+    "LastName": "Buchberger",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 167,
+    "FirstName": "Martin",
+    "LastName": "Gelinas",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 168,
+    "FirstName": "Louie",
+    "LastName": "DeBrusk",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 169,
+    "FirstName": "Petr",
+    "LastName": "Klima",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 85,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 170,
+    "FirstName": "Steven",
+    "LastName": "Rice",
+    "Team": "EDM",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 171,
+    "FirstName": "Dave",
+    "LastName": "Manson",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 172,
+    "FirstName": "Igor",
+    "LastName": "Kravchuk",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 173,
+    "FirstName": "Brian",
+    "LastName": "Benning",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 19,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 174,
+    "FirstName": "Geoff",
+    "LastName": "Smith",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 25,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 175,
+    "FirstName": "Brian",
+    "LastName": "Glynn",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 176,
+    "FirstName": "Luke",
+    "LastName": "Richardson",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 177,
+    "FirstName": "Chris",
+    "LastName": "Joseph",
+    "Team": "EDM",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 178,
+    "FirstName": "John",
+    "LastName": "Vanbiesbrk",
+    "Team": "FLA",
+    "Position": "G",
+    "Jersey": 34,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 179,
+    "FirstName": "Mark",
+    "LastName": "Fitzpatrik",
+    "Team": "FLA",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 180,
+    "FirstName": "Tom",
+    "LastName": "Fitzgerald",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 181,
+    "FirstName": "Scott",
+    "LastName": "Mellanby",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 182,
+    "FirstName": "Brian",
+    "LastName": "Skrudland",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 183,
+    "FirstName": "Mike",
+    "LastName": "Hough",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 184,
+    "FirstName": "Dave",
+    "LastName": "Lowry",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 185,
+    "FirstName": "Andrei",
+    "LastName": "Lomakin",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 186,
+    "FirstName": "Randy",
+    "LastName": "Gilhen",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 187,
+    "FirstName": "Jesse",
+    "LastName": "Belanger",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 188,
+    "FirstName": "Bill",
+    "LastName": "Lindsay",
+    "Team": "FLA",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 189,
+    "FirstName": "Joe",
+    "LastName": "Cirella",
+    "Team": "FLA",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 190,
+    "FirstName": "Alexnder",
+    "LastName": "Godynyuk",
+    "Team": "FLA",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 191,
+    "FirstName": "Gord",
+    "LastName": "Murphy",
+    "Team": "FLA",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 192,
+    "FirstName": "Gord",
+    "LastName": "Hynes",
+    "Team": "FLA",
+    "Position": "D",
+    "Jersey": 26,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 193,
+    "FirstName": "Milan",
+    "LastName": "Tichy",
+    "Team": "FLA",
+    "Position": "D",
+    "Jersey": 43,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 194,
+    "FirstName": "Sean",
+    "LastName": "Burke",
+    "Team": "HFD",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 195,
+    "FirstName": "Mario",
+    "LastName": "Gosselin",
+    "Team": "HFD",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 196,
+    "FirstName": "Frank",
+    "LastName": "Pietrngelo",
+    "Team": "HFD",
+    "Position": "G",
+    "Jersey": 40,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 197,
+    "FirstName": "Andrew",
+    "LastName": "Cassels",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 198,
+    "FirstName": "Mikael",
+    "LastName": "Nylander",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 36,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 199,
+    "FirstName": "Robert",
+    "LastName": "Kron",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 38,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 200,
+    "FirstName": "Robert",
+    "LastName": "Petrovicky",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 201,
+    "FirstName": "Geoff",
+    "LastName": "Sanderson",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 202,
+    "FirstName": "Patrick",
+    "LastName": "Poulin",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 24,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 203,
+    "FirstName": "Yvon",
+    "LastName": "Corriveau",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 204,
+    "FirstName": "Jim",
+    "LastName": "McKenzie",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 33,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 205,
+    "FirstName": "Randy",
+    "LastName": "Cunnyworth",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 206,
+    "FirstName": "Pat",
+    "LastName": "Verbeek",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 207,
+    "FirstName": "Mark",
+    "LastName": "Janssens",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 208,
+    "FirstName": "Nick",
+    "LastName": "Kypreos",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 209,
+    "FirstName": "Mark",
+    "LastName": "Greig",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 210,
+    "FirstName": "Jamie",
+    "LastName": "Leach",
+    "Team": "HFD",
+    "Position": "F",
+    "Jersey": 34,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 211,
+    "FirstName": "Zarley",
+    "LastName": "Zalapski",
+    "Team": "HFD",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 212,
+    "FirstName": "Eric",
+    "LastName": "Weinrich",
+    "Team": "HFD",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 213,
+    "FirstName": "Adam",
+    "LastName": "Burt",
+    "Team": "HFD",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 214,
+    "FirstName": "Dan",
+    "LastName": "Keczmer",
+    "Team": "HFD",
+    "Position": "D",
+    "Jersey": 37,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 215,
+    "FirstName": "Doug",
+    "LastName": "Houda",
+    "Team": "HFD",
+    "Position": "D",
+    "Jersey": 27,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 216,
+    "FirstName": "Kelly",
+    "LastName": "Hrudey",
+    "Team": "LA",
+    "Position": "G",
+    "Jersey": 32,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 217,
+    "FirstName": "Robb",
+    "LastName": "Stauber",
+    "Team": "LA",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 218,
+    "FirstName": "Rick",
+    "LastName": "Knickle",
+    "Team": "LA",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 219,
+    "FirstName": "Wayne",
+    "LastName": "Gretzky",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 99,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 220,
+    "FirstName": "Jimmy",
+    "LastName": "Carson",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 221,
+    "FirstName": "Corey",
+    "LastName": "Millen",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 222,
+    "FirstName": "Gary",
+    "LastName": "Shuchuk",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 223,
+    "FirstName": "Luc",
+    "LastName": "Robitaille",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 224,
+    "FirstName": "Tony",
+    "LastName": "Granato",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 225,
+    "FirstName": "Pat",
+    "LastName": "Conacher",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 226,
+    "FirstName": "Warren",
+    "LastName": "Rychel",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 227,
+    "FirstName": "Tomas",
+    "LastName": "Sandstrom",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 228,
+    "FirstName": "Jari",
+    "LastName": "Kurri",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 229,
+    "FirstName": "Mike",
+    "LastName": "Donnelly",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 230,
+    "FirstName": "Dave",
+    "LastName": "Taylor",
+    "Team": "LA",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 231,
+    "FirstName": "Rob",
+    "LastName": "Blake",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 232,
+    "FirstName": "Marty",
+    "LastName": "McSorley",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 33,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 233,
+    "FirstName": "Alexei",
+    "LastName": "Zhitnik",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 234,
+    "FirstName": "Darryl",
+    "LastName": "Sydor",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 25,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 235,
+    "FirstName": "Charlie",
+    "LastName": "Huddy",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 236,
+    "FirstName": "Mark",
+    "LastName": "Hardy",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 237,
+    "FirstName": "Brent",
+    "LastName": "Thompson",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 238,
+    "FirstName": "Tim",
+    "LastName": "Watters",
+    "Team": "LA",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 239,
+    "FirstName": "Patrick",
+    "LastName": "Roy",
+    "Team": "MTL",
+    "Position": "G",
+    "Jersey": 33,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 240,
+    "FirstName": "Andre",
+    "LastName": "Racicot",
+    "Team": "MTL",
+    "Position": "G",
+    "Jersey": 37,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 241,
+    "FirstName": "Kirk",
+    "LastName": "Muller",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 242,
+    "FirstName": "Stephan",
+    "LastName": "Lebeau",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 47,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 243,
+    "FirstName": "Denis",
+    "LastName": "Savard",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 244,
+    "FirstName": "Guy",
+    "LastName": "Carbonneau",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 245,
+    "FirstName": "Vincent",
+    "LastName": "Damphousse",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 246,
+    "FirstName": "Gilbert",
+    "LastName": "Dionne",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 45,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 247,
+    "FirstName": "John",
+    "LastName": "Leclair",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 248,
+    "FirstName": "Benoit",
+    "LastName": "Brunet",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 249,
+    "FirstName": "Mario",
+    "LastName": "Roberge",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 250,
+    "FirstName": "Brian",
+    "LastName": "Bellows",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 251,
+    "FirstName": "Mike",
+    "LastName": "Keane",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 252,
+    "FirstName": "Gary",
+    "LastName": "Leeman",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 253,
+    "FirstName": "Todd",
+    "LastName": "Ewen",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 36,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 254,
+    "FirstName": "Ed",
+    "LastName": "Ronan",
+    "Team": "MTL",
+    "Position": "F",
+    "Jersey": 31,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 255,
+    "FirstName": "Eric",
+    "LastName": "Desjardins",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 256,
+    "FirstName": "Matt",
+    "LastName": "Schneider",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 27,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 257,
+    "FirstName": "Patrice",
+    "LastName": "Brisebois",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 43,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 258,
+    "FirstName": "Kevin",
+    "LastName": "Haller",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 14,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 259,
+    "FirstName": "Rob",
+    "LastName": "Ramage",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 260,
+    "FirstName": "J.J.",
+    "LastName": "Daigneault",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 48,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 261,
+    "FirstName": "Lyle",
+    "LastName": "Odelein",
+    "Team": "MTL",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 262,
+    "FirstName": "Chris",
+    "LastName": "Terreri",
+    "Team": "NJ",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 263,
+    "FirstName": "Craig",
+    "LastName": "Billington",
+    "Team": "NJ",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 264,
+    "FirstName": "Alexnder",
+    "LastName": "Semak",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 265,
+    "FirstName": "Bernie",
+    "LastName": "Nicholls",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 266,
+    "FirstName": "Peter",
+    "LastName": "Stastny",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 267,
+    "FirstName": "Janne",
+    "LastName": "Ojanen",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 34,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 268,
+    "FirstName": "Valeri",
+    "LastName": "Zelepukin",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 269,
+    "FirstName": "John",
+    "LastName": "MacLean",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 270,
+    "FirstName": "Bobby",
+    "LastName": "Holik",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 271,
+    "FirstName": "Tom",
+    "LastName": "Chorske",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 272,
+    "FirstName": "Troy",
+    "LastName": "Mallette",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 273,
+    "FirstName": "Stephane",
+    "LastName": "Richer",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 44,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 274,
+    "FirstName": "Claude",
+    "LastName": "Lemieux",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 275,
+    "FirstName": "Bill",
+    "LastName": "Guerin",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 276,
+    "FirstName": "Randy",
+    "LastName": "McKay",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 277,
+    "FirstName": "Scott",
+    "LastName": "Pellerin",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 278,
+    "FirstName": "Dave",
+    "LastName": "Barr",
+    "Team": "NJ",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 279,
+    "FirstName": "Scott",
+    "LastName": "Stevens",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 280,
+    "FirstName": "Vachslav",
+    "LastName": "Fetisov",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 281,
+    "FirstName": "Bruce",
+    "LastName": "Driver",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 282,
+    "FirstName": "Scott",
+    "LastName": "Niedrmayer",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 27,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 283,
+    "FirstName": "Ken",
+    "LastName": "Daneyko",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 284,
+    "FirstName": "Tommy",
+    "LastName": "Albelin",
+    "Team": "NJ",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 285,
+    "FirstName": "Glenn",
+    "LastName": "Healy",
+    "Team": "NYI",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 286,
+    "FirstName": "Pierre",
+    "LastName": "Turgeon",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 77,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 287,
+    "FirstName": "Benoit",
+    "LastName": "Hogue",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 33,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 288,
+    "FirstName": "Marty",
+    "LastName": "McInnis",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 289,
+    "FirstName": "Travis",
+    "LastName": "Green",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 290,
+    "FirstName": "Ray",
+    "LastName": "Ferraro",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 291,
+    "FirstName": "Claude",
+    "LastName": "Loiselle",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 292,
+    "FirstName": "Steve",
+    "LastName": "Thomas",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 293,
+    "FirstName": "Derek",
+    "LastName": "King",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 294,
+    "FirstName": "Dave",
+    "LastName": "Volek",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 295,
+    "FirstName": "Patrick",
+    "LastName": "Flatley",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 296,
+    "FirstName": "Brian",
+    "LastName": "Mullen",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 297,
+    "FirstName": "Brad",
+    "LastName": "Dalgarno",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 298,
+    "FirstName": "Mick",
+    "LastName": "Vukota",
+    "Team": "NYI",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 299,
+    "FirstName": "Vladimir",
+    "LastName": "Malakhov",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 300,
+    "FirstName": "Darius",
+    "LastName": "Kasparitis",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 11,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 301,
+    "FirstName": "Jeff",
+    "LastName": "Norton",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 8,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 302,
+    "FirstName": "Uwe",
+    "LastName": "Krupp",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 303,
+    "FirstName": "Tom",
+    "LastName": "Kurvers",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 304,
+    "FirstName": "Scott",
+    "LastName": "Lachance",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 305,
+    "FirstName": "Dennis",
+    "LastName": "Vaske",
+    "Team": "NYI",
+    "Position": "D",
+    "Jersey": 37,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 306,
+    "FirstName": "Mike",
+    "LastName": "Richter",
+    "Team": "NYR",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 307,
+    "FirstName": "Mark",
+    "LastName": "Messier",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 308,
+    "FirstName": "Sergei",
+    "LastName": "Nemchinov",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 309,
+    "FirstName": "Darren",
+    "LastName": "Turcotte",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 310,
+    "FirstName": "Ed",
+    "LastName": "Olczyk",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 311,
+    "FirstName": "Esa",
+    "LastName": "Tikkanen",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 312,
+    "FirstName": "Adam",
+    "LastName": "Graves",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 313,
+    "FirstName": "Phil",
+    "LastName": "Bourque",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 314,
+    "FirstName": "Jan",
+    "LastName": "Erixon",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 315,
+    "FirstName": "Mike",
+    "LastName": "Gartner",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 316,
+    "FirstName": "Tony",
+    "LastName": "Amonte",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 33,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 317,
+    "FirstName": "Alexei",
+    "LastName": "Kovalev",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 318,
+    "FirstName": "Paul",
+    "LastName": "Broten",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 37,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 319,
+    "FirstName": "Joey",
+    "LastName": "Kocur",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 320,
+    "FirstName": "Mike",
+    "LastName": "Hartman",
+    "Team": "NYR",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 321,
+    "FirstName": "Brian",
+    "LastName": "Leetch",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 322,
+    "FirstName": "James",
+    "LastName": "Patrick",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 323,
+    "FirstName": "Sergei",
+    "LastName": "Zubov",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 324,
+    "FirstName": "Jeff",
+    "LastName": "Beukeboom",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 325,
+    "FirstName": "Kevin",
+    "LastName": "Lowe",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 326,
+    "FirstName": "Peter",
+    "LastName": "Andersson",
+    "Team": "NYR",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 327,
+    "FirstName": "Peter",
+    "LastName": "Sidorkwicz",
+    "Team": "OTW",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 328,
+    "FirstName": "Daniel",
+    "LastName": "Berthiaume",
+    "Team": "OTW",
+    "Position": "G",
+    "Jersey": 32,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 329,
+    "FirstName": "Jamie",
+    "LastName": "Baker",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 330,
+    "FirstName": "Mark",
+    "LastName": "Lamb",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 331,
+    "FirstName": "Neil",
+    "LastName": "Brady",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 332,
+    "FirstName": "Mark",
+    "LastName": "Freer",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 333,
+    "FirstName": "Laurie",
+    "LastName": "Boschman",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 334,
+    "FirstName": "David",
+    "LastName": "Archibald",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 335,
+    "FirstName": "Rob",
+    "LastName": "Murphy",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 336,
+    "FirstName": "Sylvain",
+    "LastName": "Turgeon",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 61,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 337,
+    "FirstName": "Mike",
+    "LastName": "Peluso",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 44,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 338,
+    "FirstName": "Doug",
+    "LastName": "Smail",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 339,
+    "FirstName": "Jeff",
+    "LastName": "Lazaro",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 340,
+    "FirstName": "Darcy",
+    "LastName": "Loewen",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 341,
+    "FirstName": "Bob",
+    "LastName": "Kudelski",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 342,
+    "FirstName": "Jody",
+    "LastName": "Hull",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 343,
+    "FirstName": "Andrew",
+    "LastName": "McBain",
+    "Team": "OTW",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 344,
+    "FirstName": "Tomas",
+    "LastName": "Jelinek",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 25,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 345,
+    "FirstName": "Norm",
+    "LastName": "Maciver",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 346,
+    "FirstName": "Brad",
+    "LastName": "Shaw",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 347,
+    "FirstName": "Darren",
+    "LastName": "Rumble",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 348,
+    "FirstName": "Chris",
+    "LastName": "Luongo",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 349,
+    "FirstName": "Ken",
+    "LastName": "Hammond",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 350,
+    "FirstName": "Gord",
+    "LastName": "Dineen",
+    "Team": "OTW",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 24
+  },
+  {
+    "PlayerID": 351,
+    "FirstName": "Tommy",
+    "LastName": "Soderstrom",
+    "Team": "PHI",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 352,
+    "FirstName": "Dominic",
+    "LastName": "Roussel",
+    "Team": "PHI",
+    "Position": "G",
+    "Jersey": 33,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 353,
+    "FirstName": "Steph",
+    "LastName": "Beauregard",
+    "Team": "PHI",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 354,
+    "FirstName": "Eric",
+    "LastName": "Lindros",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 88,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 355,
+    "FirstName": "Rod",
+    "LastName": "BrindAmour",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 356,
+    "FirstName": "Pelle",
+    "LastName": "Eklund",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 357,
+    "FirstName": "Josef",
+    "LastName": "Beranek",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 42,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 358,
+    "FirstName": "Keith",
+    "LastName": "Acton",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 359,
+    "FirstName": "Vachslav",
+    "LastName": "Butsayev",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 360,
+    "FirstName": "Brent",
+    "LastName": "Fedyk",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 361,
+    "FirstName": "Doug",
+    "LastName": "Evans",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 362,
+    "FirstName": "Dave",
+    "LastName": "Snuggerud",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 363,
+    "FirstName": "Claude",
+    "LastName": "Boivin",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 364,
+    "FirstName": "Mark",
+    "LastName": "Recchi",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 365,
+    "FirstName": "Kevin",
+    "LastName": "Dineen",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 366,
+    "FirstName": "Dave",
+    "LastName": "Brown",
+    "Team": "PHI",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 367,
+    "FirstName": "Garry",
+    "LastName": "Galley",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 368,
+    "FirstName": "Dimitri",
+    "LastName": "Yushkevich",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 369,
+    "FirstName": "Greg",
+    "LastName": "Hawgood",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 20,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 370,
+    "FirstName": "Terry",
+    "LastName": "Carkner",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 29,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 371,
+    "FirstName": "Ric",
+    "LastName": "Nattress",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 372,
+    "FirstName": "Ryan",
+    "LastName": "McGill",
+    "Team": "PHI",
+    "Position": "D",
+    "Jersey": 27,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 373,
+    "FirstName": "Tom",
+    "LastName": "Barrasso",
+    "Team": "PIT",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 374,
+    "FirstName": "Ken",
+    "LastName": "Wregget",
+    "Team": "PIT",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 375,
+    "FirstName": "Mario",
+    "LastName": "Lemieux",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 66,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 376,
+    "FirstName": "Ron",
+    "LastName": "Francis",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 377,
+    "FirstName": "Shawn",
+    "LastName": "McEachern",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 378,
+    "FirstName": "Mike",
+    "LastName": "Stapleton",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 379,
+    "FirstName": "Kevin",
+    "LastName": "Stevens",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 380,
+    "FirstName": "Dave",
+    "LastName": "Tippett",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 381,
+    "FirstName": "Jeff",
+    "LastName": "Daniels",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 382,
+    "FirstName": "Jaromir",
+    "LastName": "Jagr",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 68,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 383,
+    "FirstName": "Rick",
+    "LastName": "Tocchet",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 384,
+    "FirstName": "Joe",
+    "LastName": "Mullen",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 385,
+    "FirstName": "Martin",
+    "LastName": "Straka",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 82,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 386,
+    "FirstName": "Mike",
+    "LastName": "Needham",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 387,
+    "FirstName": "Jay",
+    "LastName": "Caufield",
+    "Team": "PIT",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 388,
+    "FirstName": "Larry",
+    "LastName": "Murphy",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 55,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 389,
+    "FirstName": "Ulf",
+    "LastName": "Samuelsson",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 390,
+    "FirstName": "Jim",
+    "LastName": "Paek",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 391,
+    "FirstName": "Paul",
+    "LastName": "Stanton",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 392,
+    "FirstName": "Peter",
+    "LastName": "Taglianeti",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 32,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 393,
+    "FirstName": "Mike",
+    "LastName": "Ramsey",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 394,
+    "FirstName": "Kjell",
+    "LastName": "Samuelsson",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 395,
+    "FirstName": "Grant",
+    "LastName": "Jennings",
+    "Team": "PIT",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 396,
+    "FirstName": "Ron",
+    "LastName": "Hextall",
+    "Team": "QUE",
+    "Position": "G",
+    "Jersey": 27,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 397,
+    "FirstName": "Stephane",
+    "LastName": "Fiset",
+    "Team": "QUE",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 398,
+    "FirstName": "Joe",
+    "LastName": "Sakic",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 399,
+    "FirstName": "Mike",
+    "LastName": "Ricci",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 400,
+    "FirstName": "Claude",
+    "LastName": "Lapointe",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 47,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 401,
+    "FirstName": "Martin",
+    "LastName": "Rucinsky",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 402,
+    "FirstName": "Valeri",
+    "LastName": "Kamensky",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 31,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 403,
+    "FirstName": "Gino",
+    "LastName": "Cavallini",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 44,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 404,
+    "FirstName": "Scott",
+    "LastName": "Pearson",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 405,
+    "FirstName": "Chris",
+    "LastName": "Simon",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 406,
+    "FirstName": "Tony",
+    "LastName": "Twist",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 407,
+    "FirstName": "Mats",
+    "LastName": "Sundin",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 408,
+    "FirstName": "Owen",
+    "LastName": "Nolan",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 409,
+    "FirstName": "Andrei",
+    "LastName": "Kovalenko",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 51,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 410,
+    "FirstName": "Scott",
+    "LastName": "Young",
+    "Team": "QUE",
+    "Position": "F",
+    "Jersey": 48,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 411,
+    "FirstName": "Steve",
+    "LastName": "Duchesne",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 412,
+    "FirstName": "Curtis",
+    "LastName": "Leschyshyn",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 413,
+    "FirstName": "Alexei",
+    "LastName": "Gusarov",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 414,
+    "FirstName": "Kerry",
+    "LastName": "Huffman",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 415,
+    "FirstName": "Adam",
+    "LastName": "Foote",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 52,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 416,
+    "FirstName": "Steven",
+    "LastName": "Finn",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 29,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 417,
+    "FirstName": "Mikhail",
+    "LastName": "Tatarinov",
+    "Team": "QUE",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 418,
+    "FirstName": "Arturs",
+    "LastName": "Irbe",
+    "Team": "SJ",
+    "Position": "G",
+    "Jersey": 32,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 419,
+    "FirstName": "Jeff",
+    "LastName": "Hackett",
+    "Team": "SJ",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 420,
+    "FirstName": "Brian",
+    "LastName": "Hayward",
+    "Team": "SJ",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 421,
+    "FirstName": "Kelly",
+    "LastName": "Kisio",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 422,
+    "FirstName": "Rob",
+    "LastName": "Gaudreau",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 37,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 423,
+    "FirstName": "Dean",
+    "LastName": "Evason",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 424,
+    "FirstName": "Mike",
+    "LastName": "Sullivan",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 47,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 425,
+    "FirstName": "Perry",
+    "LastName": "Berezan",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 426,
+    "FirstName": "Johan",
+    "LastName": "Garpenlov",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 427,
+    "FirstName": "Jeff",
+    "LastName": "Odgers",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 36,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 428,
+    "FirstName": "John",
+    "LastName": "Carter",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 429,
+    "FirstName": "David",
+    "LastName": "Maley",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 430,
+    "FirstName": "Pat",
+    "LastName": "Falloon",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 431,
+    "FirstName": "Ed",
+    "LastName": "Courtenay",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 432,
+    "FirstName": "Mark",
+    "LastName": "Pederson",
+    "Team": "SJ",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 433,
+    "FirstName": "Doug",
+    "LastName": "Wilson",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 434,
+    "FirstName": "Neil",
+    "LastName": "Wilkinson",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 435,
+    "FirstName": "Sandis",
+    "LastName": "Ozolinsh",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 436,
+    "FirstName": "Tom",
+    "LastName": "Pederson",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 41,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 437,
+    "FirstName": "Doug",
+    "LastName": "Zmolek",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 19,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 438,
+    "FirstName": "Jay",
+    "LastName": "More",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 439,
+    "FirstName": "Peter",
+    "LastName": "Ahola",
+    "Team": "SJ",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 440,
+    "FirstName": "Curtis",
+    "LastName": "Joseph",
+    "Team": "STL",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 441,
+    "FirstName": "Craig",
+    "LastName": "Janney",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 442,
+    "FirstName": "Nelson",
+    "LastName": "Emerson",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 443,
+    "FirstName": "Ron",
+    "LastName": "Sutter",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 444,
+    "FirstName": "Ron",
+    "LastName": "Wilson",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 445,
+    "FirstName": "Bob",
+    "LastName": "Bassen",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 446,
+    "FirstName": "Philippe",
+    "LastName": "Bozon",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 36,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 447,
+    "FirstName": "Igor",
+    "LastName": "Korolev",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 38,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 448,
+    "FirstName": "Basil",
+    "LastName": "McRae",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 449,
+    "FirstName": "Brendan",
+    "LastName": "Shanahan",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 450,
+    "FirstName": "Brett",
+    "LastName": "Hull",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 451,
+    "FirstName": "Kevin",
+    "LastName": "Miller",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 452,
+    "FirstName": "Rich",
+    "LastName": "Sutter",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 453,
+    "FirstName": "Kelly",
+    "LastName": "Chase",
+    "Team": "STL",
+    "Position": "F",
+    "Jersey": 39,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 454,
+    "FirstName": "Jeff",
+    "LastName": "Brown",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 455,
+    "FirstName": "Garth",
+    "LastName": "Butcher",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 456,
+    "FirstName": "Doug",
+    "LastName": "Crossman",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 457,
+    "FirstName": "Rick",
+    "LastName": "Zombo",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 458,
+    "FirstName": "Stephane",
+    "LastName": "Quintal",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 33,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 459,
+    "FirstName": "Lee",
+    "LastName": "Norwood",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 20,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 460,
+    "FirstName": "Bret",
+    "LastName": "Hedican",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 44,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 461,
+    "FirstName": "Curt",
+    "LastName": "Giles",
+    "Team": "STL",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 462,
+    "FirstName": "Wendell",
+    "LastName": "Young",
+    "Team": "TB",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 463,
+    "FirstName": "Pat",
+    "LastName": "Jablonski",
+    "Team": "TB",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 464,
+    "FirstName": "J.C.",
+    "LastName": "Bergeron",
+    "Team": "TB",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 465,
+    "FirstName": "Brian",
+    "LastName": "Bradley",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 466,
+    "FirstName": "Chris",
+    "LastName": "Kontos",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 467,
+    "FirstName": "Adam",
+    "LastName": "Creighton",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 468,
+    "FirstName": "Marc",
+    "LastName": "Bureau",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 28,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 469,
+    "FirstName": "Rob",
+    "LastName": "DiMaio",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 470,
+    "FirstName": "Steve",
+    "LastName": "Kasper",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 471,
+    "FirstName": "Jason",
+    "LastName": "Lafreniere",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 472,
+    "FirstName": "Mikael",
+    "LastName": "Andersson",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 34,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 473,
+    "FirstName": "Rob",
+    "LastName": "Zamuner",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 474,
+    "FirstName": "Steve",
+    "LastName": "Maltais",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 37,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 475,
+    "FirstName": "John",
+    "LastName": "Tucker",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 476,
+    "FirstName": "Danton",
+    "LastName": "Cole",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 24,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 477,
+    "FirstName": "Tim",
+    "LastName": "Bergland",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 478,
+    "FirstName": "Stan",
+    "LastName": "Drulia",
+    "Team": "TB",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 479,
+    "FirstName": "Bob",
+    "LastName": "Beers",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 480,
+    "FirstName": "Roman",
+    "LastName": "Hamrlik",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 44,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 481,
+    "FirstName": "Shawn",
+    "LastName": "Chambers",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 482,
+    "FirstName": "Marc",
+    "LastName": "Bergevin",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 25,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 483,
+    "FirstName": "Joe",
+    "LastName": "Reekie",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 29,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 484,
+    "FirstName": "Chris",
+    "LastName": "Lipuma",
+    "Team": "TB",
+    "Position": "D",
+    "Jersey": 40,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 485,
+    "FirstName": "Felix",
+    "LastName": "Potvin",
+    "Team": "TOR",
+    "Position": "G",
+    "Jersey": 29,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 486,
+    "FirstName": "Daren",
+    "LastName": "Puppa",
+    "Team": "TOR",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 487,
+    "FirstName": "Doug",
+    "LastName": "Gilmour",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 93,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 488,
+    "FirstName": "John",
+    "LastName": "Cullen",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 489,
+    "FirstName": "Mike",
+    "LastName": "Krushelski",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 490,
+    "FirstName": "Peter",
+    "LastName": "Zezel",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 491,
+    "FirstName": "Dave",
+    "LastName": "McLlwain",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 492,
+    "FirstName": "Dave",
+    "LastName": "Andreychuk",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 493,
+    "FirstName": "Wendel",
+    "LastName": "Clark",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 494,
+    "FirstName": "Mark",
+    "LastName": "Osborne",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 495,
+    "FirstName": "Bill",
+    "LastName": "Berg",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 496,
+    "FirstName": "Nikolai",
+    "LastName": "Borshevsky",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 497,
+    "FirstName": "Glenn",
+    "LastName": "Anderson",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 498,
+    "FirstName": "Rob",
+    "LastName": "Pearson",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 499,
+    "FirstName": "Mike",
+    "LastName": "Foligno",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 71,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 500,
+    "FirstName": "Ken",
+    "LastName": "Baumgartnr",
+    "Team": "TOR",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 501,
+    "FirstName": "Todd",
+    "LastName": "Gill",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 23,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 502,
+    "FirstName": "Dave",
+    "LastName": "Ellett",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 503,
+    "FirstName": "Dimitri",
+    "LastName": "Mironov",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 15,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 504,
+    "FirstName": "Drake",
+    "LastName": "Berehowsky",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 55,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 505,
+    "FirstName": "Jamie",
+    "LastName": "Macoun",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 506,
+    "FirstName": "Bob",
+    "LastName": "Rouse",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 507,
+    "FirstName": "Sylvain",
+    "LastName": "Lefebvre",
+    "Team": "TOR",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 508,
+    "FirstName": "Kirk",
+    "LastName": "McLean",
+    "Team": "VAN",
+    "Position": "G",
+    "Jersey": 1,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 509,
+    "FirstName": "Kay",
+    "LastName": "Whitmore",
+    "Team": "VAN",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 510,
+    "FirstName": "Cliff",
+    "LastName": "Ronning",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 511,
+    "FirstName": "Petr",
+    "LastName": "Nedved",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 512,
+    "FirstName": "Tom",
+    "LastName": "Fergus",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 513,
+    "FirstName": "Geoff",
+    "LastName": "Courtnall",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 514,
+    "FirstName": "Murray",
+    "LastName": "Craven",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 515,
+    "FirstName": "Greg",
+    "LastName": "Adams",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 516,
+    "FirstName": "Sergio",
+    "LastName": "Momesso",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 517,
+    "FirstName": "Gino",
+    "LastName": "Odjick",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 29,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 518,
+    "FirstName": "Garry",
+    "LastName": "Valk",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 519,
+    "FirstName": "Pavel",
+    "LastName": "Bure",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 520,
+    "FirstName": "Trevor",
+    "LastName": "Linden",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 521,
+    "FirstName": "Dixon",
+    "LastName": "Ward",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 522,
+    "FirstName": "Jim",
+    "LastName": "Sandlak",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 523,
+    "FirstName": "Tim",
+    "LastName": "Hunter",
+    "Team": "VAN",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 524,
+    "FirstName": "Jyrki",
+    "LastName": "Lumme",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 525,
+    "FirstName": "Doug",
+    "LastName": "Lidster",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 526,
+    "FirstName": "Adrien",
+    "LastName": "Plavsic",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 527,
+    "FirstName": "Jiri",
+    "LastName": "Slegr",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 528,
+    "FirstName": "Gerald",
+    "LastName": "Diduck",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 529,
+    "FirstName": "Dave",
+    "LastName": "Babych",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 44,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 530,
+    "FirstName": "Dana",
+    "LastName": "Murzyn",
+    "Team": "VAN",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 531,
+    "FirstName": "Don",
+    "LastName": "Beaupre",
+    "Team": "WSH",
+    "Position": "G",
+    "Jersey": 33,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 532,
+    "FirstName": "Rick",
+    "LastName": "Tabaracci",
+    "Team": "WSH",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 533,
+    "FirstName": "Mike",
+    "LastName": "Ridley",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 534,
+    "FirstName": "Dimitri",
+    "LastName": "Khristich",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 535,
+    "FirstName": "Dale",
+    "LastName": "Hunter",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 32,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 536,
+    "FirstName": "Michal",
+    "LastName": "Pivonka",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 537,
+    "FirstName": "Steve",
+    "LastName": "Konowlchuk",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 538,
+    "FirstName": "Reggie",
+    "LastName": "Savage",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 539,
+    "FirstName": "Bob",
+    "LastName": "Carpenter",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 540,
+    "FirstName": "Todd",
+    "LastName": "Krygier",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 541,
+    "FirstName": "Alan",
+    "LastName": "May",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 542,
+    "FirstName": "Peter",
+    "LastName": "Bondra",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 543,
+    "FirstName": "Pat",
+    "LastName": "Elynuik",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 544,
+    "FirstName": "Kelly",
+    "LastName": "Miller",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 545,
+    "FirstName": "Keith",
+    "LastName": "Jones",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 26,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 546,
+    "FirstName": "Paul",
+    "LastName": "MacDermid",
+    "Team": "WSH",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 547,
+    "FirstName": "Kevin",
+    "LastName": "Hatcher",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 548,
+    "FirstName": "Al",
+    "LastName": "Iafrate",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 549,
+    "FirstName": "Sylvain",
+    "LastName": "Cote",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 550,
+    "FirstName": "Calle",
+    "LastName": "Johansson",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 551,
+    "FirstName": "Paul",
+    "LastName": "Cavallini",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 14,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 552,
+    "FirstName": "Shawn",
+    "LastName": "Anderson",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 36,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 553,
+    "FirstName": "Jason",
+    "LastName": "Woolley",
+    "Team": "WSH",
+    "Position": "D",
+    "Jersey": 25,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 554,
+    "FirstName": "Bob",
+    "LastName": "Essensa",
+    "Team": "WPG",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 555,
+    "FirstName": "Jim",
+    "LastName": "Hrivnak",
+    "Team": "WPG",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 556,
+    "FirstName": "Alexei",
+    "LastName": "Zhamnov",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 557,
+    "FirstName": "Thomas",
+    "LastName": "Steen",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 558,
+    "FirstName": "Luciano",
+    "LastName": "Borsato",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 38,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 559,
+    "FirstName": "Mike",
+    "LastName": "Eagles",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 36,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 560,
+    "FirstName": "Stu",
+    "LastName": "Barnes",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 561,
+    "FirstName": "Darrin",
+    "LastName": "Shannon",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 34,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 562,
+    "FirstName": "Keith",
+    "LastName": "Tkachuk",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 7,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 563,
+    "FirstName": "Kris",
+    "LastName": "King",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 564,
+    "FirstName": "Russ",
+    "LastName": "Romaniuk",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 21,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 565,
+    "FirstName": "Andy",
+    "LastName": "Brickley",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 566,
+    "FirstName": "Teemu",
+    "LastName": "Selanne",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 567,
+    "FirstName": "Evgeny",
+    "LastName": "Davydov",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 568,
+    "FirstName": "John",
+    "LastName": "Druce",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 15,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 569,
+    "FirstName": "Bryan",
+    "LastName": "Erickson",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 570,
+    "FirstName": "Tie",
+    "LastName": "Domi",
+    "Team": "WPG",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 571,
+    "FirstName": "Phil",
+    "LastName": "Housley",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 572,
+    "FirstName": "Teppo",
+    "LastName": "Numminen",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 27,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 573,
+    "FirstName": "Fredrik",
+    "LastName": "Olausson",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 574,
+    "FirstName": "Sergei",
+    "LastName": "Bautin",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 575,
+    "FirstName": "Igor",
+    "LastName": "Ulanov",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 576,
+    "FirstName": "Mike",
+    "LastName": "Lalor",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 577,
+    "FirstName": "Dean",
+    "LastName": "Kennedy",
+    "Team": "WPG",
+    "Position": "D",
+    "Jersey": 26,
+    "RosterID": 24
+  },
+  {
+    "PlayerID": 578,
+    "FirstName": "Patrick",
+    "LastName": "Roy",
+    "Team": "ASE",
+    "Position": "G",
+    "Jersey": 33,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 579,
+    "FirstName": "Grant",
+    "LastName": "Fuhr",
+    "Team": "ASE",
+    "Position": "G",
+    "Jersey": 31,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 580,
+    "FirstName": "Tom",
+    "LastName": "Barrasso",
+    "Team": "ASE",
+    "Position": "G",
+    "Jersey": 35,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 581,
+    "FirstName": "Mario",
+    "LastName": "Lemieux",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 66,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 582,
+    "FirstName": "Mark",
+    "LastName": "Messier",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 583,
+    "FirstName": "Kirk",
+    "LastName": "Muller",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 584,
+    "FirstName": "Adam",
+    "LastName": "Oates",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 12,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 585,
+    "FirstName": "Joe",
+    "LastName": "Sakic",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 586,
+    "FirstName": "Pierre",
+    "LastName": "Turgeon",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 78,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 587,
+    "FirstName": "Pat",
+    "LastName": "LaFontaine",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 588,
+    "FirstName": "Kevin",
+    "LastName": "Stevens",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 25,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 589,
+    "FirstName": "Jaromir",
+    "LastName": "Jagr",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 68,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 590,
+    "FirstName": "Peter",
+    "LastName": "Bondra",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 591,
+    "FirstName": "Mike",
+    "LastName": "Gartner",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 22,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 592,
+    "FirstName": "Rick",
+    "LastName": "Tocchet",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 593,
+    "FirstName": "Alexnder",
+    "LastName": "Mogilny",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 89,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 594,
+    "FirstName": "Mark",
+    "LastName": "Recchi",
+    "Team": "ASE",
+    "Position": "F",
+    "Jersey": 8,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 595,
+    "FirstName": "Larry",
+    "LastName": "Murphy",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 55,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 596,
+    "FirstName": "Ray",
+    "LastName": "Bourque",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 77,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 597,
+    "FirstName": "Brian",
+    "LastName": "Leetch",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 2,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 598,
+    "FirstName": "Steve",
+    "LastName": "Duchesne",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 28,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 599,
+    "FirstName": "Al",
+    "LastName": "Iafrate",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 34,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 600,
+    "FirstName": "Scott",
+    "LastName": "Stevens",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 4,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 601,
+    "FirstName": "Zarley",
+    "LastName": "Zalapski",
+    "Team": "ASE",
+    "Position": "D",
+    "Jersey": 3,
+    "RosterID": 24
+  },
+  {
+    "PlayerID": 602,
+    "FirstName": "Ed",
+    "LastName": "Belfour",
+    "Team": "ASW",
+    "Position": "G",
+    "Jersey": 30,
+    "RosterID": 1
+  },
+  {
+    "PlayerID": 603,
+    "FirstName": "Tim",
+    "LastName": "Cheveldae",
+    "Team": "ASW",
+    "Position": "G",
+    "Jersey": 32,
+    "RosterID": 2
+  },
+  {
+    "PlayerID": 604,
+    "FirstName": "Felix",
+    "LastName": "Potvin",
+    "Team": "ASW",
+    "Position": "G",
+    "Jersey": 29,
+    "RosterID": 3
+  },
+  {
+    "PlayerID": 605,
+    "FirstName": "Steve",
+    "LastName": "Yzerman",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 19,
+    "RosterID": 4
+  },
+  {
+    "PlayerID": 606,
+    "FirstName": "Mike",
+    "LastName": "Modano",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 9,
+    "RosterID": 5
+  },
+  {
+    "PlayerID": 607,
+    "FirstName": "Jeremy",
+    "LastName": "Roenick",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 27,
+    "RosterID": 6
+  },
+  {
+    "PlayerID": 608,
+    "FirstName": "Brian",
+    "LastName": "Bradley",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 23,
+    "RosterID": 7
+  },
+  {
+    "PlayerID": 609,
+    "FirstName": "Doug",
+    "LastName": "Gilmour",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 93,
+    "RosterID": 8
+  },
+  {
+    "PlayerID": 610,
+    "FirstName": "Wayne",
+    "LastName": "Gretzky",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 99,
+    "RosterID": 9
+  },
+  {
+    "PlayerID": 611,
+    "FirstName": "Gary",
+    "LastName": "Roberts",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 11,
+    "RosterID": 10
+  },
+  {
+    "PlayerID": 612,
+    "FirstName": "Luc",
+    "LastName": "Robitaille",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 20,
+    "RosterID": 11
+  },
+  {
+    "PlayerID": 613,
+    "FirstName": "Theoren",
+    "LastName": "Fleury",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 14,
+    "RosterID": 12
+  },
+  {
+    "PlayerID": 614,
+    "FirstName": "Brett",
+    "LastName": "Hull",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 16,
+    "RosterID": 13
+  },
+  {
+    "PlayerID": 615,
+    "FirstName": "Pavel",
+    "LastName": "Bure",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 10,
+    "RosterID": 14
+  },
+  {
+    "PlayerID": 616,
+    "FirstName": "Teemu",
+    "LastName": "Selanne",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 13,
+    "RosterID": 15
+  },
+  {
+    "PlayerID": 617,
+    "FirstName": "Pat",
+    "LastName": "Falloon",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 18,
+    "RosterID": 16
+  },
+  {
+    "PlayerID": 618,
+    "FirstName": "Jari",
+    "LastName": "Kurri",
+    "Team": "ASW",
+    "Position": "F",
+    "Jersey": 17,
+    "RosterID": 17
+  },
+  {
+    "PlayerID": 619,
+    "FirstName": "Gary",
+    "LastName": "Suter",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 22,
+    "RosterID": 18
+  },
+  {
+    "PlayerID": 620,
+    "FirstName": "Jeff",
+    "LastName": "Brown",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 21,
+    "RosterID": 19
+  },
+  {
+    "PlayerID": 621,
+    "FirstName": "Paul",
+    "LastName": "Coffey",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 77,
+    "RosterID": 20
+  },
+  {
+    "PlayerID": 622,
+    "FirstName": "Chris",
+    "LastName": "Chelios",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 7,
+    "RosterID": 21
+  },
+  {
+    "PlayerID": 623,
+    "FirstName": "Phil",
+    "LastName": "Housley",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 6,
+    "RosterID": 22
+  },
+  {
+    "PlayerID": 624,
+    "FirstName": "Dave",
+    "LastName": "Manson",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 24,
+    "RosterID": 23
+  },
+  {
+    "PlayerID": 625,
+    "FirstName": "Steve",
+    "LastName": "Smith",
+    "Team": "ASW",
+    "Position": "D",
+    "Jersey": 5,
+    "RosterID": 24
+  }
+]

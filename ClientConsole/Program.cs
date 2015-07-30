@@ -26,13 +26,12 @@ namespace ConsoleApplication3
             //Load Default Stats
             sm.LoadDefaultStats();
 
-            Console.ReadLine();
+            Console.ReadLine();            
 
-            
             //Set The Box Score Values
             // boxscore.hometeam = hometeam.readstat;
 
-          
+
         }
 
 
