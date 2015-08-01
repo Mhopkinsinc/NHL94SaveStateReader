@@ -142,6 +142,11 @@ namespace Nhl94StatsReader
                 }
 
             }
+
+        public void GetScoringSummary()
+        {
+            var TotalGoals = from p in (IntegerStat)_Stats where p.
+        }
         
         #endregion
         
