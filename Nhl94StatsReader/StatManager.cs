@@ -16,7 +16,6 @@ namespace Nhl94StatsReader
 
         #endregion
 
-
         #region Constructors
 
             public StatManager()
@@ -81,7 +80,8 @@ namespace Nhl94StatsReader
                     new TimeStat(_statreader) { Offsets = new long[] { 9062, 9061 }, Statname = "Home Offensive Time Zone", Stattype = StatType.Team },
                     new TimeStat(_statreader) { Offsets = new long[] { 9066, 9065 }, Statname = "Home Power Play Time", Stattype = StatType.Team },
                     //AWAY TEAM STATS
-                    new IntegerStat(_statreader) { Offset = 10413, Statname = "Away Team ID", Stattype = StatType.Team},                    new IntegerStat(_statreader) { Offset = 9123, Statname = "Away Team Score", Stattype = StatType.Team},
+                    new IntegerStat(_statreader) { Offset = 10413, Statname = "Away Team ID", Stattype = StatType.Team},                    
+                    new IntegerStat(_statreader) { Offset = 9123, Statname = "Away Team Score", Stattype = StatType.Team},
                     new IntegerStat(_statreader) { Offset = 9103, Statname = "Away Team Shots", Stattype = StatType.Team},
                     new IntegerStat(_statreader) { Offset = 9175, Statname = "Away Team Breakaways", Stattype = StatType.Team},
                     new IntegerStat(_statreader) { Offset = 9179, Statname = "Away Team Breakaway Goals", Stattype = StatType.Team},
@@ -130,6 +130,7 @@ namespace Nhl94StatsReader
             var HomeTeamPlayers = from p in temp where p.Team == "CGY" select p;
 
             ReadStats();
+            GetScoringSummary();
                 
             }
 
@@ -145,7 +146,20 @@ namespace Nhl94StatsReader
 
         public void GetScoringSummary()
         {
-            var TotalGoals = from p in (IntegerStat)_Stats where p.
+
+            var GoalsScored = _statreader.ReadStat(15693)/6;
+            
+            //var IntStats = from p in _Stats
+            //               where p.GetType() == typeof(IntegerStat)
+            //               select p;
+
+            //var myquery = (from IntegerStat p in IntStats
+            //               where p.Statname == "Home Team Score" || p.Statname == "Away Team Score"
+            //              select p._statValueInt).Sum();            
+
+            //var TotalGoals = _Stats.Where(a => a.GetType == typeof(IntegerStat)).Select(a => a.)
+            //var TotalGoals = _Stats.First<IntegerStat>(a => a.Statname == "Home Team Score");
+                
         }
         
         #endregion

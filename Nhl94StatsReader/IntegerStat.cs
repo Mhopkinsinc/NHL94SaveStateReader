@@ -26,9 +26,9 @@ namespace Nhl94StatsReader
         
         private List<string> _offsetResults = new List<string>();
 
-        private String _statValueHex { get; set; }
+        public String _statValueHex { get; set; }
 
-        private int _statValueInt { get; set; }
+        public int _statValueInt { get; set; }
 
         #endregion
 

@@ -16,7 +16,7 @@ namespace Nhl94StatsReader
             public string Goal { get; set; }
             public string Assist1 { get; set; }
             public string Assist2 { get; set; }
-            public string GoalType { get; set; }
+            public GoalType GoalType { get; set; }
         }        
     }
 }
