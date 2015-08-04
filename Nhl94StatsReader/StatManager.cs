@@ -115,20 +115,6 @@ namespace Nhl94StatsReader
                     new IntegerStat(_statreader) { Offset = 9685, Statname = "Crowd Meter Current", Stattype = StatType.Game},  
                     };
 
-            var temp = JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
-
-            
-            //THIS CODE WAS USED TO PERFORM A GROUP BY TO ADD A ROSTER POSITION ID BASED ON CHAOS CSV FILE ROSTER CREATION OUTPUT.
-            
-            //var o = temp.OrderBy(x => x.PlayerID).GroupBy(x => x.Team)
-            //.Select(g => new { g, count = g.Count() })
-            //.SelectMany(t => t.g.Select(b => b)
-            //.Zip(Enumerable.Range(1, t.count), (j, i) => new { PlayerID = j.PlayerID, j.FirstName, j.LastName, j.Team, j.Position, j.Jersey, RosterID = i }));
-
-            //var tempjson = JsonConvert.SerializeObject(o);
-
-            var HomeTeamPlayers = from p in temp where p.Team == "CGY" select p;
-
             ReadStats();
             GetScoringSummary();
                 
@@ -148,6 +134,163 @@ namespace Nhl94StatsReader
         {
 
             var GoalsScored = _statreader.ReadStat(15693)/6;
+
+            var time = GetTimeOfGoal(15695);
+            var period = GetPeriodOfGoal(15696);
+            var goaltypeandteam = GetGoalType(15697);
+            var goalscorer = GetGoalScorer(15698, goaltypeandteam.Item2);
+
+            //for (int i = 1; i < 10; i++)
+            //{
+            //    var startingoffset = (15694);            
+            //}
+
+        }
+
+        internal string GetGoalScorer(long Offset, TeamType HomeorAway)
+        {
+            var PlayerId = _statreader.ReadStat(Offset);
+
+            // Get All IntegerStats from _Stats
+            var IntStats = from p in _Stats
+                           where p.GetType() == typeof(IntegerStat)
+                           select p;
+            int TeamId;
+
+            //
+            switch (HomeorAway)
+            {                
+                case TeamType.Home:
+                    TeamId = (from IntegerStat p in IntStats
+                     where p.Statname == "Home Team ID"
+                     select p._statValueInt).FirstOrDefault();
+                    break;
+                case TeamType.Away:
+                    TeamId = (from IntegerStat p in IntStats
+                     where p.Statname == "Away Team ID"
+                     select p._statValueInt).FirstOrDefault();
+                    break;
+                default:
+                    TeamId = 0;
+                    break;
+            }
+                                                
+
+            var playermodel = JsonConvert.DeserializeObject<Classic94PlayerModel >(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+
+            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
+
+            var getteamabbrv = getteams[TeamId];
+
+            var getplayer = (from p in playermodel where p.Team == getteamabbrv && p.RosterID == PlayerId+1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
+
+            return getplayer.ToString();
+           
+        }
+
+        internal Tuple<GoalType,TeamType> GetGoalType (long Offset)
+        {
+            var result = _statreader.ReadStat(Offset).ToString("X");
+            var goaltype = new GoalType();
+            TeamType teamtype;
+
+            switch (result)
+            {
+                case "00":
+                    goaltype = GoalType.ShortHanded2;
+                    teamtype = TeamType.Home;
+                    break;
+                case "01":
+                    goaltype = GoalType.ShortHanded;
+                    teamtype = TeamType.Home;
+                    break;
+                case "02":
+                    goaltype = GoalType.EvenStrength;
+                    teamtype = TeamType.Home;
+                    break;
+                case "03":
+                    goaltype = GoalType.PowerPlay;
+                    teamtype = TeamType.Home;
+                    break;
+                case "04":
+                    goaltype = GoalType.PowerPlay2;
+                    teamtype = TeamType.Home;
+                    break;
+
+                case "80":
+                    goaltype = GoalType.ShortHanded2;
+                    teamtype = TeamType.Away;
+                    break;
+                case "81":
+                    goaltype = GoalType.ShortHanded;
+                    teamtype = TeamType.Away;
+                    break;
+                case "82":
+                    goaltype = GoalType.EvenStrength;
+                    teamtype = TeamType.Away;
+                    break;
+                case "83":
+                    goaltype = GoalType.PowerPlay;
+                    teamtype = TeamType.Away;
+                    break;
+                case "84":
+                    goaltype = GoalType.PowerPlay2;
+                    teamtype = TeamType.Away;
+                    break;
+
+                default:
+                    teamtype = TeamType.Away;   
+                    break;
+            }
+
+            return Tuple.Create(goaltype, teamtype);
+
+        }
+
+        internal int GetPeriodOfGoal (long Offset)
+        {
+            var result = _statreader.ReadStat(Offset);
+            var period = result / 64 + 1;            
+            
+            //LOG
+            Console.WriteLine("Period: " + period);
+
+            return period;
+        }
+
+        internal string GetTimeOfGoal(long Offset)
+        {
+                                               
+            var result = _statreader.ReadStat(Offset);
+            var timespan = TimeSpan.FromSeconds(result);
+
+            //LOG            
+            Console.WriteLine(timespan);
+
+            return timespan.ToString();
+        }
+
+        public void ReferenceLinq()
+        {
+            //---------------------------------------------------------
+            //THIS CODE WAS USED TO PERFORM A GROUP BY TO ADD A ROSTER POSITION ID BASED ON CHAOS CSV FILE ROSTER CREATION OUTPUT.
+            //---------------------------------------------------------
+            //var temp = JsonConvert.DeserializeObject<Classic94PlayerModel >(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+
+            //var o = temp.OrderBy(x => x.PlayerID).GroupBy(x => x.Team)
+            //.Select(g => new { g, count = g.Count() })
+            //.SelectMany(t => t.g.Select(b => b)
+            //.Zip(Enumerable.Range(1, t.count), (j, i) => new { PlayerID = j.PlayerID, j.FirstName, j.LastName, j.Team, j.Position, j.Jersey, RosterID = i }));
+
+            //var tempjson = JsonConvert.SerializeObject(o);
+
+            //var HomeTeamPlayers = from p in temp where p.Team == "CGY" select p;
+            
+            //---------------------------------------------------------
+
+            //---------------------------------------------------------
+            //THIS CODE WAS USED TO QUERY THE _STATS ARRAY 
+            //---------------------------------------------------------
             
             //var IntStats = from p in _Stats
             //               where p.GetType() == typeof(IntegerStat)
@@ -159,11 +302,12 @@ namespace Nhl94StatsReader
 
             //var TotalGoals = _Stats.Where(a => a.GetType == typeof(IntegerStat)).Select(a => a.)
             //var TotalGoals = _Stats.First<IntegerStat>(a => a.Statname == "Home Team Score");
-                
+           
+            //---------------------------------------------------------
         }
-        
+
         #endregion
-        
-      
+
+
     }
 }

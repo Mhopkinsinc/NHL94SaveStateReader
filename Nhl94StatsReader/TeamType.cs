@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Nhl94StatsReader
 {
-    public enum GoalType
+    public enum TeamType
     {
-        ShortHanded,
-        ShortHanded2,
-        EvenStrength,
-        PowerPlay,
-        PowerPlay2
-    }    
+        Home,
+        Away
+    }
 }
+  
