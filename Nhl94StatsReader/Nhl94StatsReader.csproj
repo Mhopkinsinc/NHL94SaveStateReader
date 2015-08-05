@@ -51,9 +51,11 @@
     <Compile Include="IStat.cs" />
     <Compile Include="GoalANDTeamType.cs" />
     <Compile Include="Models\PenaltySummaryModel.cs" />
+    <Compile Include="PenaltySummaryManager.cs" />
     <Compile Include="PenaltyType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ScoringSummaryModel.cs" />
+    <Compile Include="ScoringSummaryManager.cs" />
     <Compile Include="StatReader.cs" />
     <Compile Include="TeamType.cs" />
     <Compile Include="TimeStat.cs" />
