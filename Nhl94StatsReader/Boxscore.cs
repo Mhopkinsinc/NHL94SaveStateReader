@@ -8,5 +8,6 @@ namespace Nhl94StatsReader
 {
     public class Boxscore
     {
+        public ScoringSummaryModel scoringsummary { get; set; }
     }
 }

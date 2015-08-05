@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Nhl94StatsReader
 {
-    public enum HomeorAwayTeam
+    public class GoalANDTeamType
     {
-        Home,
-        Away
+        public GoalType typeofgoal { get; set; }
+        public HomeorAwayTeam homeorawayteam { get; set; }
     }
 }
-  

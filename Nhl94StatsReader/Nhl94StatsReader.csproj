@@ -49,6 +49,9 @@
     <Compile Include="IntegerStat.cs" />
     <Compile Include="IStatReader.cs" />
     <Compile Include="IStat.cs" />
+    <Compile Include="GoalANDTeamType.cs" />
+    <Compile Include="Models\PenaltySummaryModel.cs" />
+    <Compile Include="PenaltyType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ScoringSummaryModel.cs" />
     <Compile Include="StatReader.cs" />

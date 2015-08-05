@@ -20,7 +20,7 @@ namespace ConsoleApplication3
             //Set The Path Of The ZSNES Save State File
             var _saveStatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl94.zs3");
 
-            //Load The File            
+            //Load The ZSNES Save State File            
             sm.LoadSaveState(_saveStatePath);            
 
             //Load Default Stats
