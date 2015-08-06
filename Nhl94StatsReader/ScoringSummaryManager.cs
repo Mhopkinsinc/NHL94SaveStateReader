@@ -28,7 +28,7 @@ namespace Nhl94StatsReader
         {
             _statreader = Statreader;
             _Stats = Stats;
-            GetScoringSummary();
+            //GetScoringSummary();
         }
 
         ~ScoringSummaryManager()
@@ -56,12 +56,13 @@ namespace Nhl94StatsReader
             {
                 var TimeOfGoal = GetTime(CurrentScoringOffset);
                 var PeriodOfGoal = GetPeriod(CurrentScoringOffset + 1);
-                var GoalTeamAndType = GetGoalType(CurrentScoringOffset + 2);
-                var TeamThatScoredGoal = GetTeamAbbrv(GoalTeamAndType.homeorawayteam);
-                var GoalScorer = GetGoalScorer(CurrentScoringOffset + 3, GoalTeamAndType.homeorawayteam);
-                var Assist1 = GetGoalScorer(CurrentScoringOffset + 4, GoalTeamAndType.homeorawayteam);
-                var Assist2 = GetGoalScorer(CurrentScoringOffset + 5, GoalTeamAndType.homeorawayteam);
-                var ss = new ScoringSummaryModel.ScoringSummary() { Time = TimeOfGoal, Period = PeriodOfGoal, Assist1 = Assist1, Assist2 = Assist2, Goal = GoalScorer, GoalType = GoalTeamAndType.typeofgoal, Team = TeamThatScoredGoal };
+                var HomeorAwayTeam = GetHomeorAwayTeam(CurrentScoringOffset + 2);
+                var TypeOfGoal = GetGoalType(CurrentScoringOffset + 2);                
+                var TeamThatScoredGoal = GetTeamAbbrv(HomeorAwayTeam);
+                var GoalScorer = GetGoalScorer(CurrentScoringOffset + 3,HomeorAwayTeam);
+                var Assist1 = GetGoalScorer(CurrentScoringOffset + 4, HomeorAwayTeam);
+                var Assist2 = GetGoalScorer(CurrentScoringOffset + 5, HomeorAwayTeam);
+                var ss = new ScoringSummaryModel.ScoringSummary() { Time = TimeOfGoal, Period = PeriodOfGoal, Assist1 = Assist1, Assist2 = Assist2, Goal = GoalScorer, GoalType = TypeOfGoal, Team = TeamThatScoredGoal };
                 SSM.Add(ss);
 
                 CurrentScoringOffset += 6;
@@ -145,66 +146,48 @@ namespace Nhl94StatsReader
 
         }
 
-        internal GoalANDTeamType GetGoalType(long Offset)
+        internal HomeorAwayTeam GetHomeorAwayTeam(long Offset)
         {
-            var result = _statreader.ReadStat(Offset).ToString("X");
+            int result = _statreader.ReadStat(Offset);
             var goaltype = new GoalType();
             HomeorAwayTeam teamtype;
 
+            teamtype = (result > 4) ? HomeorAwayTeam.Away : HomeorAwayTeam.Home;
+
+            return teamtype;
+        }
+
+        internal GoalType GetGoalType(long Offset)
+        {
+            int result = _statreader.ReadStat(Offset);
+            var goaltype = new GoalType();            
+           
+            result = (result > 4) ? (result - 128) : result;
+
             switch (result)
             {
-                case "0":
-                    goaltype = GoalType.ShortHanded2;
-                    teamtype = HomeorAwayTeam.Home;
+                case 0:
+                    goaltype = GoalType.ShortHanded2;                    
                     break;
-                case "1":
-                    goaltype = GoalType.ShortHanded;
-                    teamtype = HomeorAwayTeam.Home;
+                case 1:
+                    goaltype = GoalType.ShortHanded;                    
                     break;
-                case "2":
-                    goaltype = GoalType.EvenStrength;
-                    teamtype = HomeorAwayTeam.Home;
+                case 2:
+                    goaltype = GoalType.EvenStrength;                    
                     break;
-                case "3":
-                    goaltype = GoalType.PowerPlay;
-                    teamtype = HomeorAwayTeam.Home;
+                case 3:
+                    goaltype = GoalType.PowerPlay;                    
                     break;
-                case "4":
-                    goaltype = GoalType.PowerPlay2;
-                    teamtype = HomeorAwayTeam.Home;
-                    break;
-
-                case "80":
-                    goaltype = GoalType.ShortHanded2;
-                    teamtype = HomeorAwayTeam.Away;
-                    break;
-                case "81":
-                    goaltype = GoalType.ShortHanded;
-                    teamtype = HomeorAwayTeam.Away;
-                    break;
-                case "82":
-                    goaltype = GoalType.EvenStrength;
-                    teamtype = HomeorAwayTeam.Away;
-                    break;
-                case "83":
-                    goaltype = GoalType.PowerPlay;
-                    teamtype = HomeorAwayTeam.Away;
-                    break;
-                case "84":
-                    goaltype = GoalType.PowerPlay2;
-                    teamtype = HomeorAwayTeam.Away;
-                    break;
+                case 4:
+                    goaltype = GoalType.PowerPlay2;                    
+                    break;                
 
                 default:
-                    teamtype = HomeorAwayTeam.Away;
+                    //ERROR                   
                     break;
             }
 
-            GoalANDTeamType results = new GoalANDTeamType();
-            results.typeofgoal = goaltype;
-            results.homeorawayteam = teamtype;
-
-            return results;
+            return goaltype;
 
         }
 

@@ -56,7 +56,7 @@ namespace Nhl94StatsReader
             {
                 var TimeOfPenalty = GetTime(CurrentPenaltyOffset);
                 var PeriodOfPenalty = GetPeriod(CurrentPenaltyOffset + 1);
-                var PenaltyPlayerIDAndTeam = HomeorAwayTeamAndPlayer(CurrentPenaltyOffset + 2);
+                //var PenaltyPlayerIDAndTeam = HomeorAwayTeamAndPlayer(CurrentPenaltyOffset + 2);
                 //var PenaltyTeamAndType = GetGoalType(CurrentPenaltyOffset + 2);
                 //var TeamThatScoredGoal = GetTeamAbbrv(GoalTeamAndType.homeorawayteam);
                 //var GoalScorer = GetGoalScorer(CurrentPenaltyOffset + 3, GoalTeamAndType.homeorawayteam);
@@ -146,7 +146,7 @@ namespace Nhl94StatsReader
 
         }
 
-        internal HomeorAwayTeamAndPlayer GetPlayerIDandHomeOrAwayTeam(long Offset)
+        internal HomeorAwayandPlayerId GetPlayerIDandHomeOrAwayTeam(long Offset)
         {
             var result = _statreader.ReadStat(Offset).ToString("X");
             var goaltype = new GoalType();
@@ -273,9 +273,12 @@ namespace Nhl94StatsReader
                     break;
             }
 
-            GoalANDTeamType results = new GoalANDTeamType();
-            results.typeofgoal = goaltype;
+            HomeorAwayandPlayerId results = new HomeorAwayandPlayerId();
             results.homeorawayteam = teamtype;
+            results.PlayerRosterId = 1;
+               
+            //results.typeofgoal = goaltype;
+            //results.homeorawayteam = teamtype;
 
             return results;
 

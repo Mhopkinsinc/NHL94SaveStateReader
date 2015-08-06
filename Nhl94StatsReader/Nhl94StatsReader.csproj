@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Boxscore.cs" />
     <Compile Include="GoalType.cs" />
+    <Compile Include="HomeorAwayandPlayerId.cs" />
     <Compile Include="Models\Classic94PlayerModel.cs" />
     <Compile Include="IntegerStat.cs" />
     <Compile Include="IStatReader.cs" />
