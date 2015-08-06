@@ -17,8 +17,8 @@ namespace Nhl94StatsReader
 
         IStatReader _statreader;
         List<IStat> _Stats;
-        // Flag: Has Dispose already been called? 
-        bool disposed = false;
+        Classic94PlayerModel _playermodel;
+
 
         #endregion
 
@@ -27,14 +27,9 @@ namespace Nhl94StatsReader
         public ScoringSummaryManager(IStatReader Statreader, List<IStat> Stats)
         {
             _statreader = Statreader;
-            _Stats = Stats;
-            //GetScoringSummary();
+            _Stats = Stats;            
         }
-
-        ~ScoringSummaryManager()
-        {            
-            Dispose();            
-        }
+              
 
         #endregion
 
@@ -74,19 +69,27 @@ namespace Nhl94StatsReader
 
         }
 
-        internal string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
+        private string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
         {
             //todo There is duplicate code that can be broken out into more generic method
+            // Creating The Playermodel everytime is inefficent. Break This out into an objectg in the class and reference it.
 
             int TeamId = GetTeamId(HomeorAway);
 
-            var playermodel = JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+            Classic94PlayerModel playermodel = Create94ClassicPlayerModel();
 
             var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
 
             var getteamabbrv = getteams[TeamId];
 
             return getteamabbrv;
+        }
+
+        private void Create94ClassicPlayerModel()
+        {
+            // _statreader = (_statreader == null) ? _statreader = new StatReader(SaveStatePath) : _statreader;     
+            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;            
+            //return JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
         }
 
         /// <summary>
@@ -124,7 +127,7 @@ namespace Nhl94StatsReader
             return TeamId;
         }
 
-        internal string GetGoalScorer(long Offset, HomeorAwayTeam HomeorAway)
+        private string GetGoalScorer(long Offset, HomeorAwayTeam HomeorAway)
         {
             //todo There is duplicate code that can be broken out into more generic method
 
@@ -134,7 +137,7 @@ namespace Nhl94StatsReader
 
             int TeamId = GetTeamId(HomeorAway);
 
-            var playermodel = JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+            Classic94PlayerModel playermodel = Create94ClassicPlayerModel();
 
             var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
 
@@ -146,10 +149,9 @@ namespace Nhl94StatsReader
 
         }
 
-        internal HomeorAwayTeam GetHomeorAwayTeam(long Offset)
+        private HomeorAwayTeam GetHomeorAwayTeam(long Offset)
         {
-            int result = _statreader.ReadStat(Offset);
-            var goaltype = new GoalType();
+            int result = _statreader.ReadStat(Offset);            
             HomeorAwayTeam teamtype;
 
             teamtype = (result > 4) ? HomeorAwayTeam.Away : HomeorAwayTeam.Home;
@@ -157,7 +159,7 @@ namespace Nhl94StatsReader
             return teamtype;
         }
 
-        internal GoalType GetGoalType(long Offset)
+        private GoalType GetGoalType(long Offset)
         {
             int result = _statreader.ReadStat(Offset);
             var goaltype = new GoalType();            
@@ -191,7 +193,7 @@ namespace Nhl94StatsReader
 
         }
 
-        internal int GetPeriod(long Offset)
+        private int GetPeriod(long Offset)
         {
             var result = _statreader.ReadStat(Offset);
             var period = result / 64 + 1;
@@ -202,7 +204,7 @@ namespace Nhl94StatsReader
             return period;
         }
 
-        internal string GetTime(long Offset)
+        private string GetTime(long Offset)
         {
 
             var result = _statreader.ReadStat(Offset);
@@ -214,28 +216,39 @@ namespace Nhl94StatsReader
             return timespan.ToString();
         }
 
-        public void Dispose()
-        {
-            Dispose(true);
-        }
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
 
-        // Protected implementation of Dispose pattern. 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposed)
-                return;
-
-            if (disposing)
+            if (!disposedValue)
             {
-                _statreader = null;
+                if (disposing)
+                {
+                    _statreader.Close();
+                }
+
+                _Stats = null;                
+
+                disposedValue = true;
             }
-
-            Console.WriteLine("Disposing Scoring Summary Manager");
-
-            // Free any unmanaged objects here. 
-            //
-            disposed = true;
         }
+
+        ~ScoringSummaryManager()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(false);
+        }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(true);
+            // TODO: uncomment the following line if the finalizer is overridden above.
+            // GC.SuppressFinalize(this);
+        }
+        #endregion
 
         #endregion
     }

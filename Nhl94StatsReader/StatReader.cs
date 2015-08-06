@@ -12,9 +12,7 @@ namespace Nhl94StatsReader
         #region Properties
 
             FileStream _fileStream;
-            private String _saveStatePath;
-            // Flag: Has Dispose already been called? 
-            bool disposed = false;
+            private String _saveStatePath;            
 
         #endregion
 
@@ -27,11 +25,6 @@ namespace Nhl94StatsReader
             public StatReader(String SaveStatePath)
             {
                 SetSaveStatePath(SaveStatePath);
-            }
-
-            ~StatReader()
-            {
-                Dispose();
             }
 
         #endregion        
@@ -64,28 +57,37 @@ namespace Nhl94StatsReader
                 _fileStream.Close();
             }
 
-        public void Dispose()
-        {
-            Dispose(true);
-        }
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
 
-        // Protected implementation of Dispose pattern. 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposed)
-                return;
-
-            if (disposing)
+            if (!disposedValue)
             {
-                _fileStream.Close();
+                if (disposing)
+                {
+                    _fileStream.Close();
+                }                
+
+                disposedValue = true;
             }
-
-            Console.WriteLine("Disposing");
-
-            // Free any unmanaged objects here. 
-            //
-            disposed = true;
         }
+
+        ~StatReader()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(false);
+        }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(true);
+            // TODO: uncomment the following line if the finalizer is overridden above.
+            // GC.SuppressFinalize(this);
+        }
+        #endregion
     }
 
     #endregion

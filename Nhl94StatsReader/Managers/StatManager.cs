@@ -1,19 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
-using System.IO;
 
 namespace Nhl94StatsReader
 {
-    public class StatManager
+    //[
+    //    Category("Main"),
+    //    Description("Text"),        
+    //    Browsable(false),
+    //    EditorBrowsable(EditorBrowsableState.Never)
+    //]
+    public class StatManager : IDisposable
     {
 
         #region Properties
 
-        List<IStat> _Stats;
+        List<IStat> _stats;
         IStatReader _statreader;
         Boxscore _boxscore;
+        string _savestatepath = "";
 
         #endregion
 
@@ -25,16 +29,12 @@ namespace Nhl94StatsReader
         public StatManager(String SaveStatePath)
         {
             LoadSaveState(SaveStatePath);
+            _savestatepath = SaveStatePath;
         }
 
         #endregion
 
-        #region Methods
-
-        public void AddStat(IStat stat)
-        {
-            _Stats.Add(stat);
-        }
+        #region Methods        
 
         public void LoadSaveState(String SaveStatePath)
         {
@@ -43,13 +43,26 @@ namespace Nhl94StatsReader
 
         private void CreateStatReader(String SaveStatePath)
         {
-            _statreader = new StatReader(SaveStatePath);
-            _boxscore = new Boxscore();
+            if (_savestatepath != SaveStatePath && _statreader != null) { _statreader.Close(); _statreader = null; _boxscore = null; }
+
+            _statreader = (_statreader == null) ? _statreader = new StatReader(SaveStatePath) : _statreader;            
+            _boxscore = (_boxscore == null) ? _boxscore = new Boxscore() : _boxscore;
+
+            _savestatepath = SaveStatePath;
         }
 
-        public void LoadDefaultStats()
+        public Boxscore GenerateBoxScore()
         {
-            _Stats = new List<IStat>
+            LoadDefaultStats();
+            GetScoringSummary();
+            GetPenaltySummary();
+
+            return _boxscore;
+        }
+
+        private void LoadDefaultStats()
+        {
+            _stats = new List<IStat>
                     {
                     //HOME TEAM STATS
                     new IntegerStat(_statreader) { Offset = 10411, Statname = "Home Team ID", Stattype = StatType.Team},
@@ -118,37 +131,41 @@ namespace Nhl94StatsReader
                     };
 
             ReadStats();
-            GetScoringSummary();
-            GetPenaltySummary();
 
         }
 
-        public void ReadStats()
+        private void ReadStats()
         {
 
-            foreach (IStat stat in _Stats)
+            foreach (IStat stat in _stats)
             {
                 stat.ReadStat();
             }
 
         }
 
-        public void GetPenaltySummary()
+        private void GetPenaltySummary()
         {
-            var PSM = new PenaltySummaryManager(_statreader, _Stats);
+            var PSM = new PenaltySummaryManager(_statreader, _stats);
             var PSmodel = PSM.GetPenaltySummary();
+            _boxscore.penaltysummary = PSmodel;
         }
 
 
-        public void GetScoringSummary()
+        private void GetScoringSummary()
         {
 
-            var SSM = new ScoringSummaryManager(_statreader, _Stats);
+            var SSM = new ScoringSummaryManager(_statreader, _stats);            
             var SSmodel = SSM.GetScoringSummary();
             _boxscore.scoringsummary = SSmodel;           
-        }        
+        }
 
-        public void ReferenceLinq()
+        private void AddStat(IStat stat)
+        {
+            _stats.Add(stat);
+        }
+
+        private void ReferenceLinq()
         {
             //---------------------------------------------------------
             //THIS CODE WAS USED TO PERFORM A GROUP BY TO ADD A ROSTER POSITION ID BASED ON CHAOS CSV FILE ROSTER CREATION OUTPUT.
@@ -183,6 +200,43 @@ namespace Nhl94StatsReader
 
             //---------------------------------------------------------
         }
+
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    _statreader.Close();
+                }
+
+                _stats = null;
+                _boxscore = null;
+
+                disposedValue = true;
+            }
+        }
+
+        ~StatManager()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(false);
+        }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(true);
+            // TODO: uncomment the following line if the finalizer is overridden above.
+            //GC.SuppressFinalize(this);
+        }
+        #endregion
+
+
 
         #endregion
 
