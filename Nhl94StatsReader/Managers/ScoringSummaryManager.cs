@@ -71,9 +71,7 @@ namespace Nhl94StatsReader
 
         private string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
         {
-            //todo There is duplicate code that can be broken out into more generic method
-            // Creating The Playermodel everytime is inefficent. Break This out into an objectg in the class and reference it.
-
+            
             int TeamId = GetTeamId(HomeorAway);
 
             var playermodel = Create94ClassicPlayerModel();

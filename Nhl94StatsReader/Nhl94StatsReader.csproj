@@ -49,12 +49,13 @@
     <Compile Include="GoalType.cs" />
     <Compile Include="Models\Classic94PlayerModel.cs" />
     <Compile Include="IntegerStat.cs" />
-    <Compile Include="IStatReader.cs" />
-    <Compile Include="IStat.cs" />
+    <Compile Include="Interfaces\IStatReader.cs" />
+    <Compile Include="Interfaces\IStat.cs" />
     <Compile Include="Models\PenaltySummaryModel.cs" />
     <Compile Include="Managers\PenaltySummaryManager.cs" />
     <Compile Include="PenaltyType.cs" />
     <Compile Include="Models\PlayerStatsModel.cs" />
+    <Compile Include="Managers\PlayerStatManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ScoringSummaryModel.cs" />
     <Compile Include="Managers\ScoringSummaryManager.cs" />

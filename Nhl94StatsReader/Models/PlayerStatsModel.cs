@@ -1,8 +1,6 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Nhl94StatsReader
 {
@@ -15,9 +13,10 @@ namespace Nhl94StatsReader
             //[System.ComponentModel.DefaultValue(0)]
             public int Goals { get; set; }
             //[System.ComponentModel.DefaultValue(0)]
-            public int Assisst { get; set; }
-            public int Points { get { return (this.Goals + this.Assisst); } }
+            public int Assissts { get; set; }
+            public int Points { get; set; }
             public int PenaltyMinutes { get; set; }
+            public int Shots { get; set; }
         }
     }
 }

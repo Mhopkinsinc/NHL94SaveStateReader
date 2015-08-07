@@ -56,6 +56,7 @@ namespace Nhl94StatsReader
             LoadDefaultStats();
             GetScoringSummary();
             GetPenaltySummary();
+            GetPlayerStats();          
 
             return _boxscore;
         }
@@ -142,6 +143,13 @@ namespace Nhl94StatsReader
                 stat.ReadStat();
             }
 
+        }
+
+        private void GetPlayerStats()
+        {
+            var PSM = new PlayerStatManager(_statreader, _stats);
+            var PSmodel = PSM.GetPlayerStats();
+            _boxscore.playerstats = PSmodel;
         }
 
         private void GetPenaltySummary()
