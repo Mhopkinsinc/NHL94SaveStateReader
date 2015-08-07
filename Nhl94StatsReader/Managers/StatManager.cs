@@ -53,15 +53,23 @@ namespace Nhl94StatsReader
 
         public Boxscore GenerateBoxScore()
         {
-            LoadDefaultStats();
-            GetScoringSummary();
-            GetPenaltySummary();
-            GetPlayerStats();          
+            GetTeamStats2();
+            //GetTeamStats();
+            //GetScoringSummary();
+            //GetPenaltySummary();
+            //GetPlayerStats();
 
             return _boxscore;
         }
 
-        private void LoadDefaultStats()
+        private void GetTeamStats2()
+        {
+            var TSM = new TeamStatManager(_statreader);
+            var TSmodel = TSM.GetTeamStats();
+            _boxscore.teamstats = TSmodel;     
+        }
+
+        private void GetTeamStats()
         {
             _stats = new List<IStat>
                     {

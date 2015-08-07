@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Nhl94StatsReader
 {
@@ -40,7 +38,7 @@ namespace Nhl94StatsReader
             var HomeTeamPlayers = from p in playermodel where p.Team == hometeam select p;
             var AwayTeamPlayers = from p in playermodel where p.Team == awayteam select p;            
 
-            //Get The HomeTeam Roster, For Each Player Get All The Player Stats
+            //Get The HomeTeam Roster, Then For Each Player Get All The Player Stats
             foreach (var player in HomeTeamPlayers)
             {
                 var goals = _statreader.ReadStat(9472 + player.RosterID );
@@ -53,7 +51,7 @@ namespace Nhl94StatsReader
                 psm.Add(ps);
             }
 
-            //Get The HomeTeam Roster, For Each Player Get All The Player Stats
+            //Get The AwayTeam Roster, Then For Each Player Get All The Player Stats
             foreach (var player in AwayTeamPlayers)
             {
                 var goals = _statreader.ReadStat(9498 + player.RosterID);
@@ -142,11 +140,14 @@ namespace Nhl94StatsReader
             {
                 if (disposing)
                 {
-                    // TODO: dispose managed state (managed objects).
+                    _statreader.Close();
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
                 // TODO: set large fields to null.
+
+                _stats = null;
+                _playermodel = null;
 
                 disposedValue = true;
             }

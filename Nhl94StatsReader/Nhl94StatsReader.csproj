@@ -60,10 +60,13 @@
     <Compile Include="Models\ScoringSummaryModel.cs" />
     <Compile Include="Managers\ScoringSummaryManager.cs" />
     <Compile Include="StatReader.cs" />
+    <Compile Include="Managers\TeamStatManager.cs" />
+    <Compile Include="Models\TeamStatModel.cs" />
     <Compile Include="TeamType.cs" />
     <Compile Include="TimeStat.cs" />
     <Compile Include="Managers\StatManager.cs" />
     <Compile Include="StatType.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Json\Classic94Players.json">

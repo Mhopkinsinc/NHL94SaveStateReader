@@ -11,51 +11,66 @@ namespace Nhl94StatsReader
     {
         #region Properties
 
-            FileStream _fileStream;
-            private String _saveStatePath;            
+        FileStream _fileStream;
+        private String _saveStatePath;
 
         #endregion
 
         #region Constructors
 
         public StatReader()
-            {
-            }
+        {
 
-            public StatReader(String SaveStatePath)
-            {
-                SetSaveStatePath(SaveStatePath);
-            }
+        }
 
-        #endregion        
+        public StatReader(String SaveStatePath)
+        {
+            SetSaveStatePath(SaveStatePath);
+        }
+
+        #endregion
 
         #region Methods
-        
-            public void SetSaveStatePath(String SaveStatePath)
+
+        public void SetSaveStatePath(String SaveStatePath)
+        {
+            if (_saveStatePath == null)
             {
-                if (_saveStatePath == null)
-                {
-                    _saveStatePath = SaveStatePath;
-                    _fileStream = File.OpenRead(_saveStatePath);
-                }
+                _saveStatePath = SaveStatePath;
+                _fileStream = File.OpenRead(_saveStatePath);
             }
+        }
 
-            public byte ReadStat(long offset)
-            {
-                byte _result;
+        public byte ReadStat(long offset)
+        {
+            byte _result;
 
-                BinaryReader w = new BinaryReader(_fileStream);
-                _fileStream.Seek(offset, SeekOrigin.Begin);
-                _result = w.ReadByte();
+            BinaryReader w = new BinaryReader(_fileStream);
+            _fileStream.Seek(offset, SeekOrigin.Begin);
+            _result = w.ReadByte();
 
-                return _result;
+            return _result;
 
-            }
+        }
 
-            public void Close()
-            {
-                _fileStream.Close();
-            }
+        public int ReadlLittleEndian(long offset1, long offset2)
+        {
+
+            string statValueHex;
+            int result;
+
+            statValueHex = ReadStat(offset2).ToString("X");
+            statValueHex += ReadStat(offset1).ToString("X");
+            result = Convert.ToInt32(statValueHex, 16);
+
+            return result;            
+
+        }
+
+        public void Close()
+        {
+            _fileStream.Close();
+        }
 
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls
@@ -67,8 +82,9 @@ namespace Nhl94StatsReader
                 if (disposing)
                 {
                     _fileStream.Close();
-                }                
+                }
 
+                _fileStream = null;
                 disposedValue = true;
             }
         }
