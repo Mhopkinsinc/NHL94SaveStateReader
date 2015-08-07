@@ -16,7 +16,7 @@ namespace Nhl94StatsReader
         #region Properties
 
         IStatReader _statreader;
-        List<IStat> _Stats;
+        List<IStat> _stats;
         Classic94PlayerModel _playermodel;
 
 
@@ -27,7 +27,7 @@ namespace Nhl94StatsReader
         public ScoringSummaryManager(IStatReader Statreader, List<IStat> Stats)
         {
             _statreader = Statreader;
-            _Stats = Stats;            
+            _stats = Stats;            
         }
               
 
@@ -76,7 +76,7 @@ namespace Nhl94StatsReader
 
             int TeamId = GetTeamId(HomeorAway);
 
-            Classic94PlayerModel playermodel = Create94ClassicPlayerModel();
+            var playermodel = Create94ClassicPlayerModel();
 
             var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
 
@@ -85,11 +85,10 @@ namespace Nhl94StatsReader
             return getteamabbrv;
         }
 
-        private void Create94ClassicPlayerModel()
+        private Classic94PlayerModel Create94ClassicPlayerModel()
         {
-            // _statreader = (_statreader == null) ? _statreader = new StatReader(SaveStatePath) : _statreader;     
-            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;            
-            //return JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;
+            return _playermodel;
         }
 
         /// <summary>
@@ -102,7 +101,7 @@ namespace Nhl94StatsReader
             int TeamId;
 
             // Get All IntegerStats from _Stats
-            var IntStats = from p in _Stats
+            var IntStats = from p in _stats
                            where p.GetType() == typeof(IntegerStat)
                            select p;
 
@@ -137,7 +136,7 @@ namespace Nhl94StatsReader
 
             int TeamId = GetTeamId(HomeorAway);
 
-            Classic94PlayerModel playermodel = Create94ClassicPlayerModel();
+            var playermodel = Create94ClassicPlayerModel();
 
             var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
 
@@ -228,7 +227,8 @@ namespace Nhl94StatsReader
                     _statreader.Close();
                 }
 
-                _Stats = null;                
+                _stats = null;
+                _playermodel = null;
 
                 disposedValue = true;
             }
