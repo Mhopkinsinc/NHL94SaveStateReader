@@ -1,27 +1,23 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System;
+
 
 namespace Nhl94StatsReader
 {
     public class PlayerStatManager : IDisposable
     {
+        //TODO : Add Additonal Calculated stats like save percent shooting percent
+        
         #region Properties
 
-        IStatReader _statreader;
-        List<IStat> _stats;
-        Classic94PlayerModel _playermodel;
+        IStatReader _statreader;        
 
         #endregion
 
         #region Constructors
 
-        public PlayerStatManager(IStatReader Statreader, List<IStat> Stats)
+        public PlayerStatManager(IStatReader Statreader)
         {
-            _statreader = Statreader;
-            _stats = Stats;
+            _statreader = Statreader;            
         }
 
         #endregion
@@ -32,36 +28,63 @@ namespace Nhl94StatsReader
         {
             PlayerStatsModel psm = new PlayerStatsModel();
 
-            var hometeam = GetTeamAbbrv(HomeorAwayTeam.Home);
-            var awayteam = GetTeamAbbrv(HomeorAwayTeam.Away);
-            var playermodel = Create94ClassicPlayerModel();
-            var HomeTeamPlayers = from p in playermodel where p.Team == hometeam select p;
-            var AwayTeamPlayers = from p in playermodel where p.Team == awayteam select p;            
-
+            var hometeamid = GetTeamID(HomeorAwayTeam.Home);
+            var awayteamid = GetTeamID(HomeorAwayTeam.Away);
+            var hometeamaabbreviation = Utils.GetTeamAbbreviation(hometeamid);
+            var awayteamaabbreviation = Utils.GetTeamAbbreviation(awayteamid);
+            
             //Get The HomeTeam Roster, Then For Each Player Get All The Player Stats
-            foreach (var player in HomeTeamPlayers)
+            foreach (var player in Utils.GetTeamRoster(hometeamaabbreviation))
             {
-                var goals = _statreader.ReadStat(9472 + player.RosterID );
-                var assists = _statreader.ReadStat(9524 + player.RosterID);
-                var points = goals + assists;
-                var shots = _statreader.ReadStat(9576 + player.RosterID);
-                var pim = _statreader.ReadStat(9628 + player.RosterID);
-                var playername = player.FirstName + " " + player.LastName;
-                var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, Goals = goals, PenaltyMinutes = pim, Player = playername, Team = hometeam, Points = points, Shots = shots };
-                psm.Add(ps);
+                if (player.Position == "G")
+                {
+                    var goalsagainst = _statreader.ReadStat(9472 + player.RosterID);
+                    var assists = _statreader.ReadStat(9524 + player.RosterID);
+                    var points = assists;
+                    var shotsagainst = _statreader.ReadStat(9576 + player.RosterID);
+                    var playername = player.FirstName + " " + player.LastName;
+                    var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, GoalsAgainst = goalsagainst, Player = playername, Team = awayteamaabbreviation, Points = points, ShotsAgainst = shotsagainst };
+                    psm.Add(ps);
+                }
+                else
+                {
+                    var goals = _statreader.ReadStat(9472 + player.RosterID);
+                    var assists = _statreader.ReadStat(9524 + player.RosterID);
+                    var points = goals + assists;
+                    var shots = _statreader.ReadStat(9576 + player.RosterID);
+                    var pim = _statreader.ReadStat(9628 + player.RosterID);
+                    var playername = player.FirstName + " " + player.LastName;
+                    var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, Goals = goals, PenaltyMinutes = pim, Player = playername, Team = hometeamaabbreviation, Points = points, Shots = shots };
+                    psm.Add(ps);
+                }
+
+                
             }
 
             //Get The AwayTeam Roster, Then For Each Player Get All The Player Stats
-            foreach (var player in AwayTeamPlayers)
+            foreach (var player in Utils.GetTeamRoster(awayteamaabbreviation))
             {
-                var goals = _statreader.ReadStat(9498 + player.RosterID);
-                var assists = _statreader.ReadStat(9550 + player.RosterID);
-                var points = goals + assists;
-                var shots = _statreader.ReadStat(9602 + player.RosterID);
-                var pim = _statreader.ReadStat(9654 + player.RosterID);
-                var playername = player.FirstName + " " + player.LastName;
-                var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, Goals = goals, PenaltyMinutes = pim, Player = playername, Team = awayteam, Points = points, Shots = shots };
-                psm.Add(ps);
+                if (player.Position == "G")
+                {
+                    var goalsagainst = _statreader.ReadStat(9498 + player.RosterID);
+                    var assists = _statreader.ReadStat(9550 + player.RosterID);
+                    var points = assists;
+                    var shotsagainst = _statreader.ReadStat(9602 + player.RosterID);                    
+                    var playername = player.FirstName + " " + player.LastName;
+                    var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, GoalsAgainst = goalsagainst, Player = playername, Team = awayteamaabbreviation, Points = points, ShotsAgainst = shotsagainst };
+                    psm.Add(ps);
+                }
+                else
+                {
+                    var goals = _statreader.ReadStat(9498 + player.RosterID);
+                    var assists = _statreader.ReadStat(9550 + player.RosterID);
+                    var points = goals + assists;
+                    var shots = _statreader.ReadStat(9602 + player.RosterID);
+                    var pim = _statreader.ReadStat(9654 + player.RosterID);
+                    var playername = player.FirstName + " " + player.LastName;
+                    var ps = new PlayerStatsModel.PlayerStats() { Assissts = assists, Goals = goals, PenaltyMinutes = pim, Player = playername, Team = awayteamaabbreviation, Points = points, Shots = shots };
+                    psm.Add(ps);
+                }
             }
 
             return psm;
@@ -76,57 +99,18 @@ namespace Nhl94StatsReader
             Console.WriteLine("Period: " + period);
 
             return period;
-        }
+        }   
 
-        private Classic94PlayerModel Create94ClassicPlayerModel()
+        private int GetTeamID(HomeorAwayTeam HomeorAway)
         {
-            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;
-            return _playermodel;
+            int teamid;
+
+            teamid = (HomeorAway == HomeorAwayTeam.Home) ? _statreader.ReadStat(10411) : _statreader.ReadStat(10413);
+
+            return teamid;
+
         }
 
-        private string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
-        {
-
-            int TeamId = GetTeamId(HomeorAway);
-
-            var playermodel = Create94ClassicPlayerModel();
-
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
-
-            var getteamabbrv = getteams[TeamId];
-
-            return getteamabbrv;
-        }
-
-        private int GetTeamId(HomeorAwayTeam HomeorAway)
-        {
-            int TeamId;
-
-            // Get All IntegerStats from _Stats
-            var IntStats = from p in _stats
-                           where p.GetType() == typeof(IntegerStat)
-                           select p;
-
-            // This Will Return The ID of The Home Or Away Team
-            switch (HomeorAway)
-            {
-                case HomeorAwayTeam.Home:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Home Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                case HomeorAwayTeam.Away:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Away Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                default:
-                    TeamId = 0;
-                    break;
-            }
-
-            return TeamId;
-        }
         #endregion
 
 
@@ -144,10 +128,7 @@ namespace Nhl94StatsReader
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-                // TODO: set large fields to null.
-
-                _stats = null;
-                _playermodel = null;
+                // TODO: set large fields to null.                
 
                 disposedValue = true;
             }

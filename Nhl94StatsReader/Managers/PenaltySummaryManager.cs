@@ -8,22 +8,20 @@ namespace Nhl94StatsReader
 {
     public class PenaltySummaryManager : IDisposable
     {
-
-        //todo Add IDispose Pattern to this class for cleanup.
-
+     
+        //TODO: Problem When The Penalty happens at the 5:00 minute mark it is showing the wrong time?
+           
         #region Properties
 
-        IStatReader _statreader;
-        List<IStat> _Stats;        
+        IStatReader _statreader;         
 
         #endregion
 
         #region Constructors
 
-        public PenaltySummaryManager(IStatReader Statreader, List<IStat> Stats)
+        public PenaltySummaryManager(IStatReader Statreader)
         {
-            _statreader = Statreader;
-            _Stats = Stats;            
+            _statreader = Statreader;        
         }     
 
         #endregion
@@ -46,18 +44,27 @@ namespace Nhl94StatsReader
                 var TimeOfPenalty = GetTime(CurrentPenaltyOffset);
                 var PeriodOfPenalty = GetPeriod(CurrentPenaltyOffset + 1);
                 var HomeorAwayTeam = GetHomeorAwayTeam(CurrentPenaltyOffset + 3);
-                var TypeOfPenalty = GetPenaltyType(CurrentPenaltyOffset + 3);
-                var TeamThatReceivedPenalty = GetTeamAbbrv(HomeorAwayTeam);
-                var PlayerThatReceivedPenalty = GetPlayer(CurrentPenaltyOffset + 2, HomeorAwayTeam);
-                var ps = new PenaltySummaryModel.PenaltySummary() { PenaltyType = TypeOfPenalty, Period = PeriodOfPenalty, Player = PlayerThatReceivedPenalty, Team = TeamThatReceivedPenalty, Time= TimeOfPenalty };
+                var TeamId = GetTeamID(HomeorAwayTeam);
+                var TeamAbbreviation = Utils.GetTeamAbbreviation(TeamId);
+                var TypeOfPenalty = GetPenaltyType(CurrentPenaltyOffset + 3);                
+                var PlayerThatReceivedPenalty = GetPlayer(CurrentPenaltyOffset + 2, TeamAbbreviation);
+                var ps = new PenaltySummaryModel.PenaltySummary() { PenaltyType = TypeOfPenalty, Period = PeriodOfPenalty, Player = PlayerThatReceivedPenalty, Team = TeamAbbreviation, Time= TimeOfPenalty };
                 PSM.Add(ps);
 
                 CurrentPenaltyOffset += 4;
 
             }
 
-            return PSM;
-            //_boxscore.scoringsummary = SSM;
+            return PSM;           
+
+        }
+        private int GetTeamID(HomeorAwayTeam HomeorAway)
+        {
+            int teamid;
+
+            teamid = (HomeorAway == HomeorAwayTeam.Home) ? _statreader.ReadStat(10411) : _statreader.ReadStat(10413);
+
+            return teamid;
 
         }
 
@@ -114,84 +121,20 @@ namespace Nhl94StatsReader
             teamtype = (result > 24) ? HomeorAwayTeam.Away : HomeorAwayTeam.Home;
 
             return teamtype;
-        }
+        }       
 
-        private string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
+        private string GetPlayer(long offset, string TeamAbbreviation)
         {
-            //todo There is duplicate code that can be broken out into more generic method
+            int rosterid = _statreader.ReadStat(offset);
 
-            int TeamId = GetTeamId(HomeorAway);
+            rosterid = (rosterid > 24) ? (rosterid - 128) : rosterid;
 
-            var playermodel = JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
+            if (rosterid == 255) return string.Empty;
 
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
+            var player = Utils.GetPlayer(TeamAbbreviation, rosterid);
 
-            var getteamabbrv = getteams[TeamId];
-
-            return getteamabbrv;
+            return player;
         }
-
-        /// <summary>
-        /// Returns The TeamId Of The Home Or Away Team
-        /// </summary>
-        /// <param name="HomeorAway"></param>
-        /// <returns>TeamId</returns>
-        private int GetTeamId(HomeorAwayTeam HomeorAway)
-        {
-            int TeamId;
-
-            // Get All IntegerStats from _Stats
-            var IntStats = from p in _Stats
-                           where p.GetType() == typeof(IntegerStat)
-                           select p;
-
-            // This Will Return The ID of The Home Or Away Team
-            switch (HomeorAway)
-            {
-                case HomeorAwayTeam.Home:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Home Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                case HomeorAwayTeam.Away:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Away Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                default:
-                    TeamId = 0;
-                    break;
-            }
-
-            return TeamId;
-        }
-
-        private string GetPlayer(long Offset, HomeorAwayTeam HomeorAway)
-        {
-            //todo There is duplicate code that can be broken out into more generic method
-
-            int result = _statreader.ReadStat(Offset);            
-
-            result = (result > 24) ? (result - 128) : result;
-
-            var PlayerId = result;
-
-            if (PlayerId == 255) return string.Empty;
-
-            int TeamId = GetTeamId(HomeorAway);
-
-            var playermodel = JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json")));
-
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
-
-            var getteamabbrv = getteams[TeamId];
-
-            var getplayer = (from p in playermodel where p.Team == getteamabbrv && p.RosterID == PlayerId + 1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
-
-            return getplayer.ToString();
-
-        }
-
 
 
         private int GetPeriod(long Offset)
@@ -214,7 +157,7 @@ namespace Nhl94StatsReader
             //LOG            
             Console.WriteLine(timespan);
 
-            return timespan.ToString();
+            return timespan.ToString(@"mm\:ss");
         }
 
         #region IDisposable Support
@@ -227,9 +170,7 @@ namespace Nhl94StatsReader
                 if (disposing)
                 {
                     _statreader.Close();
-                }
-
-                _Stats = null;
+                }               
 
                 disposedValue = true;
             }

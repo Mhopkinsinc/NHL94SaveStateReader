@@ -10,26 +10,19 @@ namespace Nhl94StatsReader
 {
     public class ScoringSummaryManager : IDisposable
     {
-
-        //todo Add IDispose Pattern to this class for cleanup.
         
         #region Properties
 
         IStatReader _statreader;
-        List<IStat> _stats;
-        Classic94PlayerModel _playermodel;
-
 
         #endregion
 
         #region Constructors
 
-        public ScoringSummaryManager(IStatReader Statreader, List<IStat> Stats)
+        public ScoringSummaryManager(IStatReader Statreader)
         {
-            _statreader = Statreader;
-            _stats = Stats;            
-        }
-              
+            _statreader = Statreader;            
+        }              
 
         #endregion
 
@@ -52,99 +45,42 @@ namespace Nhl94StatsReader
                 var TimeOfGoal = GetTime(CurrentScoringOffset);
                 var PeriodOfGoal = GetPeriod(CurrentScoringOffset + 1);
                 var HomeorAwayTeam = GetHomeorAwayTeam(CurrentScoringOffset + 2);
-                var TypeOfGoal = GetGoalType(CurrentScoringOffset + 2);                
-                var TeamThatScoredGoal = GetTeamAbbrv(HomeorAwayTeam);
-                var GoalScorer = GetGoalScorer(CurrentScoringOffset + 3,HomeorAwayTeam);
-                var Assist1 = GetGoalScorer(CurrentScoringOffset + 4, HomeorAwayTeam);
-                var Assist2 = GetGoalScorer(CurrentScoringOffset + 5, HomeorAwayTeam);
-                var ss = new ScoringSummaryModel.ScoringSummary() { Time = TimeOfGoal, Period = PeriodOfGoal, Assist1 = Assist1, Assist2 = Assist2, Goal = GoalScorer, GoalType = TypeOfGoal, Team = TeamThatScoredGoal };
+                var TeamId = GetTeamID(HomeorAwayTeam);
+                var TeamAbbreviation = Utils.GetTeamAbbreviation(TeamId);
+                var TypeOfGoal = GetGoalType(CurrentScoringOffset + 2);
+                var GoalScorer = GetPlayer(CurrentScoringOffset + 3,TeamAbbreviation );
+                var Assist1 = GetPlayer(CurrentScoringOffset + 4, TeamAbbreviation);
+                var Assist2 = GetPlayer(CurrentScoringOffset + 5, TeamAbbreviation);
+                var ss = new ScoringSummaryModel.ScoringSummary() { Time = TimeOfGoal, Period = PeriodOfGoal, Assist1 = Assist1, Assist2 = Assist2, Goal = GoalScorer, GoalType = TypeOfGoal, Team = TeamAbbreviation };
                 SSM.Add(ss);
 
-                CurrentScoringOffset += 6;
+                CurrentScoringOffset += 6; //Move To The Next Scoring Summary Offset
 
             }
 
             return SSM;
-            //_boxscore.scoringsummary = SSM;
-
         }
 
-        private string GetTeamAbbrv(HomeorAwayTeam HomeorAway)
+        private int GetTeamID(HomeorAwayTeam HomeorAway)
         {
-            
-            int TeamId = GetTeamId(HomeorAway);
+            int teamid;
 
-            var playermodel = Create94ClassicPlayerModel();
+            teamid = (HomeorAway == HomeorAwayTeam.Home) ? _statreader.ReadStat(10411) : _statreader.ReadStat(10413);
 
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
+            return teamid;
 
-            var getteamabbrv = getteams[TeamId];
-
-            return getteamabbrv;
-        }
-
-        private Classic94PlayerModel Create94ClassicPlayerModel()
+        }       
+      
+        private string GetPlayer(long offset, string TeamAbbreviation)
         {
-            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;
-            return _playermodel;
-        }
+            var rosterid = _statreader.ReadStat(offset);
 
-        /// <summary>
-        /// Returns The TeamId Of The Home Or Away Team
-        /// </summary>
-        /// <param name="HomeorAway"></param>
-        /// <returns>TeamId</returns>
-        private int GetTeamId(HomeorAwayTeam HomeorAway)
-        {
-            int TeamId;
+            if (rosterid == 255) return string.Empty;
 
-            // Get All IntegerStats from _Stats
-            var IntStats = from p in _stats
-                           where p.GetType() == typeof(IntegerStat)
-                           select p;
+            var player = Utils.GetPlayer(TeamAbbreviation,rosterid);
 
-            // This Will Return The ID of The Home Or Away Team
-            switch (HomeorAway)
-            {
-                case HomeorAwayTeam.Home:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Home Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                case HomeorAwayTeam.Away:
-                    TeamId = (from IntegerStat p in IntStats
-                              where p.Statname == "Away Team ID"
-                              select p._statValueInt).FirstOrDefault();
-                    break;
-                default:
-                    TeamId = 0;
-                    break;
-            }
-
-            return TeamId;
-        }
-
-        private string GetGoalScorer(long Offset, HomeorAwayTeam HomeorAway)
-        {
-            //todo There is duplicate code that can be broken out into more generic method
-
-            var PlayerId = _statreader.ReadStat(Offset);
-
-            if (PlayerId == 255) return string.Empty;
-
-            int TeamId = GetTeamId(HomeorAway);
-
-            var playermodel = Create94ClassicPlayerModel();
-
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
-
-            var getteamabbrv = getteams[TeamId];
-
-            var getplayer = (from p in playermodel where p.Team == getteamabbrv && p.RosterID == PlayerId + 1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
-
-            return getplayer.ToString();
-
-        }
+            return player;
+        }       
 
         private HomeorAwayTeam GetHomeorAwayTeam(long Offset)
         {
@@ -210,7 +146,7 @@ namespace Nhl94StatsReader
             //LOG            
             Console.WriteLine(timespan);
 
-            return timespan.ToString();
+            return timespan.ToString(@"mm\:ss");
         }
 
         #region IDisposable Support
@@ -224,9 +160,6 @@ namespace Nhl94StatsReader
                 {
                     _statreader.Close();
                 }
-
-                _stats = null;
-                _playermodel = null;
 
                 disposedValue = true;
             }

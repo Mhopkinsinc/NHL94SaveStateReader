@@ -11,8 +11,7 @@ namespace Nhl94StatsReader
 
         #region Properties
 
-        IStatReader _statreader;        
-        Classic94PlayerModel _playermodel;
+        IStatReader _statreader;
 
         #endregion
 
@@ -33,7 +32,7 @@ namespace Nhl94StatsReader
 
             //Home Team Stats
             int teamid = _statreader.ReadStat(10411);
-            string team = GetTeamAbbrv(teamid);
+            string team = Utils.GetTeamAbbreviation(teamid);
             int score = _statreader.ReadStat(9121);
             int shots = _statreader.ReadStat(9101);
             int breakaways = _statreader.ReadStat(9173);
@@ -68,7 +67,7 @@ namespace Nhl94StatsReader
 
             //Away Team Stats
             teamid = _statreader.ReadStat(10413);
-            team = GetTeamAbbrv(teamid);
+            team = Utils.GetTeamAbbreviation(teamid);
             score = _statreader.ReadStat(9123);
             shots = _statreader.ReadStat(9103);
             breakaways = _statreader.ReadStat(9175);
@@ -102,29 +101,7 @@ namespace Nhl94StatsReader
             tsm.Add(awayts);
 
             return tsm;
-        }
-
-        private string GetTeamAbbrv(int TeamID)
-        {
-
-            int teamid = TeamID;
-
-            var playermodel = Utils.GetClassic94PlayerModel(); //Create94ClassicPlayerModel();
-
-            var getteams = playermodel.Select(x => x.Team).Distinct().ToList();
-
-            var getteamabbrv = getteams[teamid];
-
-            return getteamabbrv;
-        }
-
-        private Classic94PlayerModel Create94ClassicPlayerModel()
-        {
-            _playermodel = (_playermodel == null) ? JsonConvert.DeserializeObject<Classic94PlayerModel>(File.ReadAllText(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\Classic94Players.json"))) : _playermodel;
-            return _playermodel;
-        }
-
-        
+        }      
 
         #endregion
 
