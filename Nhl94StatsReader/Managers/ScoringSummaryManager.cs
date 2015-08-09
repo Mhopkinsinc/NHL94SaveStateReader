@@ -131,9 +131,6 @@ namespace Nhl94StatsReader
             var result = _statreader.ReadStat(Offset);
             var period = result / 64 + 1;
 
-            //LOG
-            Console.WriteLine("Period: " + period);
-
             return period;
         }
 
@@ -142,9 +139,6 @@ namespace Nhl94StatsReader
 
             var result = _statreader.ReadStat(Offset);
             var timespan = TimeSpan.FromSeconds(result);
-
-            //LOG            
-            Console.WriteLine(timespan);
 
             return timespan.ToString(@"mm\:ss");
         }
@@ -158,7 +152,7 @@ namespace Nhl94StatsReader
             {
                 if (disposing)
                 {
-                    _statreader.Close();
+                    _statreader = null;
                 }
 
                 disposedValue = true;

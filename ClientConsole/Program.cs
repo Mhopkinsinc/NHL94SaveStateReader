@@ -21,8 +21,7 @@ namespace ConsoleApplication3
             //Generate The Boxscore
             var boxscore = sm.GenerateBoxScore();
 
-            Console.ReadLine();
-
+            //Dispose The StatManager
             sm.Dispose();
 
             sm = null;

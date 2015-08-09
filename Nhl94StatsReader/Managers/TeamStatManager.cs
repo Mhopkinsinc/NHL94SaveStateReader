@@ -114,7 +114,7 @@ namespace Nhl94StatsReader
             {
                 if (disposing)
                 {
-                    // TODO: dispose managed state (managed objects).
+                    _statreader = null;
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.

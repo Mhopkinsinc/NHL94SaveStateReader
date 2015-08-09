@@ -68,7 +68,8 @@ namespace Nhl94StatsReader
         {
             var TSM = new TeamStatManager(_statreader);
             var TSmodel = TSM.GetTeamStats();
-            _boxscore.teamstats = TSmodel;     
+            _boxscore.teamstats = TSmodel;
+            TSM.Dispose();
         }
 
         private void GetPlayerStats()
@@ -76,6 +77,7 @@ namespace Nhl94StatsReader
             var PSM = new PlayerStatManager(_statreader);
             var PSmodel = PSM.GetPlayerStats();
             _boxscore.playerstats = PSmodel;
+            PSM.Dispose();
         }
 
         private void GetPenaltySummary()
@@ -83,15 +85,16 @@ namespace Nhl94StatsReader
             var PSM = new PenaltySummaryManager(_statreader);
             var PSmodel = PSM.GetPenaltySummary();
             _boxscore.penaltysummary = PSmodel;
+            PSM.Dispose();
         }
 
 
         private void GetScoringSummary()
         {
-
             var SSM = new ScoringSummaryManager(_statreader);
             var SSmodel = SSM.GetScoringSummary();
-            _boxscore.scoringsummary = SSmodel;           
+            _boxscore.scoringsummary = SSmodel;
+            SSM.Dispose();
         }
 
         #endregion
@@ -108,7 +111,7 @@ namespace Nhl94StatsReader
                     _statreader.Close();
                 }
 
-                _boxscore = null;
+                _boxscore = null;                
 
                 disposedValue = true;
             }
