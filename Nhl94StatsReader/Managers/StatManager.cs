@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using NLog;
 
 namespace Nhl94StatsReader
 {
@@ -21,15 +21,15 @@ namespace Nhl94StatsReader
         Boxscore _boxscore;
         string _savestatepath = "";
 
+        private static Logger logger = LogManager.GetCurrentClassLogger();                
+
         #endregion
 
-        #region Constructors
-
-        public StatManager()
-        { }
+        #region Constructors        
 
         public StatManager(String SaveStatePath)
         {
+            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
             LoadSaveState(SaveStatePath);
             _savestatepath = SaveStatePath;
         }
@@ -38,24 +38,25 @@ namespace Nhl94StatsReader
 
         #region Methods        
 
-        public void LoadSaveState(String SaveStatePath)
+        private void LoadSaveState(String SaveStatePath)
         {
+            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
             CreateStatReader(SaveStatePath);
         }
 
         private void CreateStatReader(String SaveStatePath)
         {
-            if (_savestatepath != SaveStatePath && _statreader != null) { _statreader.Close(); _statreader = null; _boxscore = null; }
-
+            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
+            if (_savestatepath != SaveStatePath && _statreader != null) { _statreader.Close(); _statreader = null; _boxscore = null; logger.Info("Creating New StatReader As A New Save State Files Has Been Passed In."); }
             _statreader = (_statreader == null) ? _statreader = new StatReader(SaveStatePath) : _statreader;            
             _boxscore = (_boxscore == null) ? _boxscore = new Boxscore() : _boxscore;
-
             _savestatepath = SaveStatePath;
         }
 
         public Boxscore GenerateBoxScore()
         {
-            
+
+            logger.Info("Generating BoxScore");
             GetTeamStats();
             GetScoringSummary();
             GetPenaltySummary();
