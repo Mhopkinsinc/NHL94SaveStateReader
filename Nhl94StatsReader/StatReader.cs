@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using NLog;
 
 
 namespace Nhl94StatsReader
@@ -10,6 +11,7 @@ namespace Nhl94StatsReader
 
         FileStream _fileStream;
         private String _saveStatePath;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
@@ -34,7 +36,17 @@ namespace Nhl94StatsReader
             if (_saveStatePath == null)
             {
                 _saveStatePath = SaveStatePath;
-                _fileStream = File.OpenRead(_saveStatePath);
+
+                try
+                {
+                    _fileStream = File.OpenRead(_saveStatePath);
+                }
+                catch (Exception ex)
+                {
+                    logger.Error(ex.Message);
+                    throw;                    
+                }
+                
             }
         }
 
@@ -79,6 +91,7 @@ namespace Nhl94StatsReader
                 if (disposing)
                 {
                     _fileStream.Close();
+                    logger.Info("StatReader Dispose() _fileStream.Close(), disposing={0}, dispsedValue={1}", disposing, disposedValue);
                 }
 
                 _fileStream = null;
@@ -88,15 +101,17 @@ namespace Nhl94StatsReader
 
         ~StatReader()
         {
-            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.            
             Dispose(false);
+            logger.Info("Dispose(false) Called");
         }
 
         // This code added to correctly implement the disposable pattern.
         public void Dispose()
         {
-            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.            
             Dispose(true);
+            logger.Info("Public Dispose(true) Called");
             // TODO: uncomment the following line if the finalizer is overridden above.
             // GC.SuppressFinalize(this);
         }
