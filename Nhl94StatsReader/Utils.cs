@@ -17,6 +17,7 @@ namespace Nhl94StatsReader
         
         public static IEnumerable<Classic94PlayerModel.Classic94Player> GetTeamRoster(string TeamAbbreviation)
         {
+
             var results = from p in _playermodel where p.Team == TeamAbbreviation select p;
             return results;
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using NLog;
+using System.IO;
 
 namespace Nhl94StatsReader
 {
@@ -29,6 +30,9 @@ namespace Nhl94StatsReader
 
         public StatManager(String SaveStatePath)
         {
+            if (string.IsNullOrEmpty(SaveStatePath)) { logger.Error("SaveStatePath was null or empty."); throw new ArgumentNullException("SaveStatePath Can't be Null or Empty String. "); }
+            if (SaveStatePath.LastIndexOfAny(Path.GetInvalidPathChars()) >= 0) { logger.Error("Invalid Path Characters In SaveStatePath={0})", SaveStatePath); throw new ArgumentException("Invalid Characters In Path"); }
+
             logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
             LoadSaveState(SaveStatePath);
             _savestatepath = SaveStatePath;
