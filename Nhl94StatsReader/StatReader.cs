@@ -15,12 +15,7 @@ namespace Nhl94StatsReader
 
         #endregion
 
-        #region Constructors
-
-        public StatReader()
-        {
-
-        }
+        #region Constructors       
 
         public StatReader(String SaveStatePath)
         {
@@ -31,7 +26,7 @@ namespace Nhl94StatsReader
 
         #region Methods
 
-        public void SetSaveStatePath(String SaveStatePath)
+        private void SetSaveStatePath(String SaveStatePath)
         {
             if (_saveStatePath == null)
             {
@@ -44,10 +39,10 @@ namespace Nhl94StatsReader
                 catch (Exception ex)
                 {
                     logger.Error(ex.Message);
-                    throw;                    
+                    throw;
                 }
-                
-            }
+
+            }           
         }
 
         public byte ReadStat(long offset)

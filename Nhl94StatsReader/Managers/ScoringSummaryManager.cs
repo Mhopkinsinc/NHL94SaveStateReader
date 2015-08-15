@@ -1,10 +1,6 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using NLog;
+
 
 namespace Nhl94StatsReader
 {
@@ -14,6 +10,7 @@ namespace Nhl94StatsReader
         #region Properties
 
         IStatReader _statreader;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
@@ -21,7 +18,8 @@ namespace Nhl94StatsReader
 
         public ScoringSummaryManager(IStatReader Statreader)
         {
-            _statreader = Statreader;            
+            if (Statreader == null) { logger.Error("Statreader was null"); throw new ArgumentNullException("Statreader Can't be null."); }
+            _statreader = Statreader;
         }              
 
         #endregion

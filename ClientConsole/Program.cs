@@ -9,11 +9,11 @@ namespace ConsoleApplication3
         static void Main(string[] args)
         {
 
-            
-            //Set The Path Of The ZSNES Save State File
-            var _saveStatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl95.zs3");
 
-            //Create An Instance Of The Stat Manager Passing In The Path Of The ZSNES Save State.
+            //Set The Path Of The ZSNES Save State File            
+            var _saveStatePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"SaveState\nhl94.zs3");
+
+            //Create An Instance Of The Stat Manager Passing In The Path Of The ZSNES Save State.            
             var sm = new StatManager(_saveStatePath);            
 
             //Generate The Boxscore

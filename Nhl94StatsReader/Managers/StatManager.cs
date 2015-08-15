@@ -1,5 +1,7 @@
 ﻿using System;
 using NLog;
+using System.IO;
+using System.Linq;
 
 namespace Nhl94StatsReader
 {
@@ -29,7 +31,11 @@ namespace Nhl94StatsReader
 
         public StatManager(String SaveStatePath)
         {
-            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
+            if (string.IsNullOrEmpty(SaveStatePath)) { logger.Error("SaveStatePath was null or empty."); throw new ArgumentNullException("SaveStatePath Can't be Null or Empty String. "); }
+            if (SaveStatePath.LastIndexOfAny(Path.GetInvalidPathChars()) >= 0) { logger.Error("Invalid Path Characters In SaveStatePath=\"{0}\")", SaveStatePath); throw new ArgumentException("Invalid Characters In Path"); }
+            if (SaveStatePath.Any( x => char.IsWhiteSpace ( x ))) { logger.Error("Whitespace Characters In SaveStatePath=\"{0}\" ", SaveStatePath); throw new ArgumentException("WhiteSpace Characters In Path"); }
+
+            logger.Info("Called with (SaveStatePath=\"{0}\")", SaveStatePath);
             LoadSaveState(SaveStatePath);
             _savestatepath = SaveStatePath;
         }
@@ -40,13 +46,13 @@ namespace Nhl94StatsReader
 
         private void LoadSaveState(String SaveStatePath)
         {
-            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
+            logger.Info("Called with (SaveStatePath=\"{0}\")", SaveStatePath);
             CreateStatReader(SaveStatePath);
         }
 
         private void CreateStatReader(String SaveStatePath)
         {
-            logger.Info("Called with (SaveStatePath={0})", SaveStatePath);
+            logger.Info("Called with (SaveStatePath=\"{0}\")", SaveStatePath);
             if (_savestatepath != SaveStatePath && _statreader != null) { _statreader.Close(); _statreader = null; _boxscore = null; logger.Info("Creating New StatReader As A New Save State Files Has Been Passed In."); }
             _statreader = (_statreader == null) ? _statreader = new StatReader(SaveStatePath) : _statreader;            
             _boxscore = (_boxscore == null) ? _boxscore = new Boxscore() : _boxscore;

@@ -18,6 +18,7 @@ namespace Nhl94StatsReader
 
         public TeamStatManager(IStatReader Statreader)
         {
+            if (Statreader == null) { logger.Error("Statreader was null"); throw new ArgumentNullException("Statreader Can't be null."); }
             _statreader = Statreader;
         }
 
