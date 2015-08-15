@@ -21,7 +21,7 @@ namespace Nhl94StatsReader
         {
 
             if (string.IsNullOrEmpty(TeamAbbreviation)) { logger.Error("TeamAbbreviation was null or empty."); throw new ArgumentNullException("TeamAbbreviation Can't be Null or Empty String. "); }
-            var results = from p in _playermodel where p.Team == TeamAbbreviation select p;
+            var results = from p in Playermodel where p.Team == TeamAbbreviation select p;
             return results;
         }
 
@@ -33,7 +33,7 @@ namespace Nhl94StatsReader
         public static string GetPlayer(string TeamAbbreviation, int RosterId)
         {
             if (string.IsNullOrEmpty(TeamAbbreviation)) { logger.Error("TeamAbbreviation was null or empty."); throw new ArgumentNullException("TeamAbbreviation Can't be Null or Empty String. "); }
-            var getplayer = (from p in _playermodel where p.Team == TeamAbbreviation && p.RosterID == RosterId + 1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
+            var getplayer = (from p in Playermodel where p.Team == TeamAbbreviation && p.RosterID == RosterId + 1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
             return getplayer.ToString();
         }
 
