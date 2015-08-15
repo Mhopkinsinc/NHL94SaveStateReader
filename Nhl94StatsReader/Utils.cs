@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using System.IO;
+using NLog;
 
 namespace Nhl94StatsReader
 {
@@ -10,6 +11,7 @@ namespace Nhl94StatsReader
     {
         private static Classic94PlayerModel _playermodel;
         private static List<String> _teams;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         public static Classic94PlayerModel Playermodel { get { return _playermodel ?? (_playermodel = GetClassic94PlayerModel()); } }
 
@@ -18,6 +20,7 @@ namespace Nhl94StatsReader
         public static IEnumerable<Classic94PlayerModel.Classic94Player> GetTeamRoster(string TeamAbbreviation)
         {
 
+            if (string.IsNullOrEmpty(TeamAbbreviation)) { logger.Error("TeamAbbreviation was null or empty."); throw new ArgumentNullException("TeamAbbreviation Can't be Null or Empty String. "); }
             var results = from p in _playermodel where p.Team == TeamAbbreviation select p;
             return results;
         }
@@ -29,6 +32,7 @@ namespace Nhl94StatsReader
 
         public static string GetPlayer(string TeamAbbreviation, int RosterId)
         {
+            if (string.IsNullOrEmpty(TeamAbbreviation)) { logger.Error("TeamAbbreviation was null or empty."); throw new ArgumentNullException("TeamAbbreviation Can't be Null or Empty String. "); }
             var getplayer = (from p in _playermodel where p.Team == TeamAbbreviation && p.RosterID == RosterId + 1 select new { Name = p.FirstName + ", " + p.LastName }).FirstOrDefault();
             return getplayer.ToString();
         }
