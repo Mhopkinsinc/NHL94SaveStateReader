@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using NLog;
-
+using System.Text;
 
 namespace Nhl94StatsReader
 {
@@ -12,6 +12,8 @@ namespace Nhl94StatsReader
         FileStream _fileStream;
         private String _saveStatePath;
         private static Logger logger = LogManager.GetCurrentClassLogger();
+        private bool _validsavestatefile;
+        public bool ValidSaveStateFile { get { return _validsavestatefile; } }
 
         #endregion
 
@@ -20,6 +22,7 @@ namespace Nhl94StatsReader
         public StatReader(String SaveStatePath)
         {
             SetSaveStatePath(SaveStatePath);
+            ValidateZsnesSaveState();            
         }
 
         #endregion
@@ -43,6 +46,16 @@ namespace Nhl94StatsReader
                 }
 
             }           
+        }
+
+        private void ValidateZsnesSaveState()
+        {
+            BinaryReader w = new BinaryReader(_fileStream);            
+            _fileStream.Position = 0;
+            var thebytes = w.ReadBytes(5);
+            var result = Encoding.UTF8.GetString(thebytes);
+            _validsavestatefile = (result == "ZSNES") ? true : false;
+            if (_validsavestatefile == false) { logger.Error("Invalid Header in Save State Header=\"{0}\")", result); }
         }
 
         public byte ReadStat(long offset)
