@@ -109,19 +109,19 @@ namespace Nhl94StatsReader
 
         ~StatReader()
         {
-            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.            
-            Dispose(false);
-            logger.Info("Dispose(false) Called");
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.                        
+            Dispose(false);            
+            return;
         }
 
         // This code added to correctly implement the disposable pattern.
         public void Dispose()
         {
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.            
-            Dispose(true);
-            logger.Info("Public Dispose(true) Called");
+            Dispose(true);            
             // TODO: uncomment the following line if the finalizer is overridden above.
-            // GC.SuppressFinalize(this);
+            GC.SuppressFinalize(this);
+            logger.Info("Public Dispose(true) Called");
         }
         #endregion
     }
